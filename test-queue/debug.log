@@ -1,0 +1,3064 @@
+2023-05-29 13:38:46,773 - Debug Adapter (main) - DEBUG - START_TIME_2023_05_29_13-38-46
+2023-05-29 13:38:46,773 - Debug Adapter (main) - DEBUG - Init errors:None
+2023-05-29 13:38:46,773 - Debug Adapter (main) - INFO - Working directory: /home/alex
+2023-05-29 13:38:46,773 - Debug Adapter (main) - INFO - Arguments: 
+{   'app_flash_off': 65536,
+    'board_type': None,
+    'cmdfile': '/home/alex/esp32/test-queue/esp-idf-vscode-generated.gdb',
+    'core_file': (),
+    'debug': 5,
+    'developer_mode': 'none',
+    'device_name': 'esp32',
+    'elfpath': ('/home/alex/esp32/test-queue/build/test-queue.elf',),
+    'log_file': '/home/alex/esp32/test-queue/debug.log',
+    'log_mult_files': None,
+    'log_no_debug_console': None,
+    'oocd': 'openocd',
+    'oocd_args': None,
+    'oocd_ip': 'localhost',
+    'oocd_mode': 'without_oocd',
+    'oocd_scripts': None,
+    'port': 43474,
+    'postmortem': False,
+    'tmo_scale_factor': 1,
+    'toolchain_prefix': 'xtensa-esp32-elf-'}
+2023-05-29 13:38:46,773 - Debug Adapter (main) - CRITICAL - Debug adapter -> Extension: DEBUG_ADAPTER_STARTED
+2023-05-29 13:38:46,773 - Debug Adapter (main) - INFO - Starting. Cmd: /home/alex/.vscode/extensions/espressif.esp-idf-extension-1.6.3/esp_debug_adapter/debug_adapter_main.py -d 5 -e /home/alex/esp32/test-queue/build/test-queue.elf -l /home/alex/esp32/test-queue/debug.log -p 43474 -dn esp32 -a 0x10000 -t xtensa-esp32-elf- -om without_oocd -x /home/alex/esp32/test-queue/esp-idf-vscode-generated.gdb
+
+2023-05-29 13:38:46,774 - Debug Adapter (main) - INFO - Listening on port 43474
+2023-05-29 13:38:46,774 - Debug Adapter (main) - CRITICAL - Debug adapter -> Extension: DEBUG_ADAPTER_READY2CONNECT
+2023-05-29 13:38:46,775 - Debug Adapter (main) - DEBUG - Got connection
+2023-05-29 13:38:46,776 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Debug adapter -> Extension: DEBUG_ADAPTER_STARTED\n", "source": {}}, "seq": 0}
+
+2023-05-29 13:38:46,776 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Starting. Cmd: /home/alex/.vscode/extensions/espressif.esp-idf-extension-1.6.3/esp_debug_adapter/debug_adapter_main.py -d 5 -e /home/alex/esp32/test-queue/build/test-queue.elf -l /home/alex/esp32/test-queue/debug.log -p 43474 -dn esp32 -a 0x10000 -t xtensa-esp32-elf- -om without_oocd -x /home/alex/esp32/test-queue/esp-idf-vscode-generated.gdb\n\n", "source": {}}, "seq": 1}
+
+2023-05-29 13:38:46,777 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Listening on port 43474\n", "source": {}}, "seq": 2}
+
+2023-05-29 13:38:46,777 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Debug adapter -> Extension: DEBUG_ADAPTER_READY2CONNECT\n", "source": {}}, "seq": 3}
+
+2023-05-29 13:38:46,777 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Got connection\n", "source": {}}, "seq": 4}
+
+2023-05-29 13:38:46,782 - Debug Adapter (ReaderThread) - DEBUG - read line: >>b'Content-Length: 514\\r\\n'<<
+
+2023-05-29 13:38:46,782 - Debug Adapter (ReaderThread) - DEBUG - read line: >>b'\\r\\n'<<
+
+2023-05-29 13:38:46,782 - Debug Adapter(Command Processor) - DEBUG - Got json: {
+    "arguments": {
+        "adapterID": "espidf",
+        "clientID": "vscode",
+        "clientName": "Visual Studio Code",
+        "columnsStartAt1": true,
+        "linesStartAt1": true,
+        "locale": "en",
+        "pathFormat": "path",
+        "supportsArgsCanBeInterpretedByShell": true,
+        "supportsInvalidatedEvent": true,
+        "supportsMemoryEvent": true,
+        "supportsMemoryReferences": true,
+        "supportsProgressReporting": true,
+        "supportsRunInTerminalRequest": true,
+        "supportsStartDebuggingRequest": true,
+        "supportsVariablePaging": true,
+        "supportsVariableType": true
+    },
+    "command": "initialize",
+    "seq": 1,
+    "type": "request"
+}
+2023-05-29 13:38:46,782 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Got json: {\n    \"arguments\": {\n        \"adapterID\": \"espidf\",\n        \"clientID\": \"vscode\",\n        \"clientName\": \"Visual Studio Code\",\n        \"columnsStartAt1\": true,\n        \"linesStartAt1\": true,\n        \"locale\": \"en\",\n        \"pathFormat\": \"path\",\n        \"supportsArgsCanBeInterpretedByShell\": true,\n        \"supportsInvalidatedEvent\": true,\n        \"supportsMemoryEvent\": true,\n        \"supportsMemoryReferences\": true,\n        \"supportsProgressReporting\": true,\n        \"supportsRunInTerminalRequest\": true,\n        \"supportsStartDebuggingRequest\": true,\n        \"supportsVariablePaging\": true,\n        \"supportsVariableType\": true\n    },\n    \"command\": \"initialize\",\n    \"seq\": 1,\n    \"type\": \"request\"\n}\n", "source": {}}, "seq": 5}
+
+2023-05-29 13:38:46,783 - Gdb - DEBUG - MI->: -gdb-set mi-async on
+2023-05-29 13:38:46,909 - Gdb - DEBUG - MI<-:
+[{'message': 'thread-group-added',
+  'payload': {'id': 'i1'},
+  'stream': 'stdout',
+  'token': None,
+  'type': 'notify'},
+ {'message': 'done',
+  'payload': None,
+  'stream': 'stdout',
+  'token': None,
+  'type': 'result'}]
+2023-05-29 13:38:46,909 - Gdb - INFO - NOTIFY: thread-group-added {'id': 'i1'}
+2023-05-29 13:38:46,909 - Gdb - DEBUG - RESULT: done None
+2023-05-29 13:38:46,909 - Gdb - DEBUG - MI->: -gdb-set logging file /tmp/gdb_proc.log
+2023-05-29 13:38:46,909 - Gdb - DEBUG - MI<-:
+[{'message': 'done',
+  'payload': None,
+  'stream': 'stdout',
+  'token': None,
+  'type': 'result'}]
+2023-05-29 13:38:46,909 - Gdb - DEBUG - RESULT: done None
+2023-05-29 13:38:46,910 - Gdb - DEBUG - MI->: -gdb-set logging on
+2023-05-29 13:38:46,910 - Gdb - DEBUG - MI<-:
+[{'message': None,
+  'payload': "Warning: 'set logging on', an alias for the command 'set logging "
+             "enabled', is deprecated.\\n",
+  'stream': 'stdout',
+  'type': 'console'},
+ {'message': None,
+  'payload': "Use 'set logging enabled on'.\\n\\n",
+  'stream': 'stdout',
+  'type': 'console'},
+ {'message': 'done',
+  'payload': None,
+  'stream': 'stdout',
+  'token': None,
+  'type': 'result'}]
+2023-05-29 13:38:46,910 - Gdb - INFO - CONS: ("Warning: 'set logging on', an alias for the command 'set logging enabled', "
+ 'is deprecated.\\n')
+2023-05-29 13:38:46,910 - Gdb - INFO - CONS: "Use 'set logging enabled on'.\\n\\n"
+2023-05-29 13:38:46,910 - Gdb - DEBUG - RESULT: done None
+2023-05-29 13:38:46,910 - Debug Adapter (main) - DEBUG - Created gdb object of type: GdbEsp32
+2023-05-29 13:38:46,911 - Gdb - DEBUG - MI->: -file-exec-and-symbols /home/alex/esp32/test-queue/build/test-queue.elf
+2023-05-29 13:38:46,910 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Created gdb object of type: GdbEsp32\n", "source": {}}, "seq": 6}
+
+2023-05-29 13:38:46,934 - Gdb - DEBUG - MI<-:
+[{'message': 'done',
+  'payload': None,
+  'stream': 'stdout',
+  'token': None,
+  'type': 'result'}]
+2023-05-29 13:38:46,934 - Gdb - DEBUG - RESULT: done None
+2023-05-29 13:38:46,934 - Gdb - DEBUG - Skipped connection to remote target
+2023-05-29 13:38:46,934 - Debug Adapter(Command Processor) - DEBUG - Processed command: initialize
+2023-05-29 13:38:46,934 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "response", "request_seq": 1, "success": true, "command": "initialize", "seq": 7, "body": {"supportsConfigurationDoneRequest": true, "supportsFunctionBreakpoints": false, "supportsConditionalBreakpoints": true, "supportsHitConditionalBreakpoints": true, "supportsEvaluateForHovers": false, "exceptionBreakpointFilters": false, "supportsStepBack": false, "supportsSetVariable": true, "supportsRestartFrame": false, "supportsGotoTargetsRequest": false, "supportsStepInTargetsRequest": true, "supportsCompletionsRequest": false, "completionTriggerCharacters": false, "supportsModulesRequest": false, "additionalModuleColumns": false, "supportedChecksumAlgorithms": false, "supportsRestartRequest": true, "supportsExceptionOptions": false, "supportsValueFormattingOptions": false, "supportsExceptionInfoRequest": false, "supportTerminateDebuggee": true, "supportsDelayedStackTraceLoading": false, "supportsLoadedSourcesRequest": false, "supportsLogPoints": false, "supportsTerminateThreadsRequest": false, "supportsSetExpression": false, "supportsTerminateRequest": false, "supportsDataBreakpoints": true, "supportsReadMemoryRequest": true, "supportsDisassembleRequest": true, "supportsCancelRequest": false, "supportsBreakpointLocationsRequest": false, "supportsClipboardContext": false, "supportsSteppingGranularity": true, "supportsInstructionBreakpoints": true}}
+
+2023-05-29 13:38:46,934 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "initialized", "seq": 8}
+
+2023-05-29 13:38:46,935 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Debug Adapter initialized\n", "source": {}}, "seq": 9}
+
+2023-05-29 13:38:46,935 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Processed command: initialize\n", "source": {}}, "seq": 10}
+
+2023-05-29 13:38:46,937 - Debug Adapter (ReaderThread) - DEBUG - read line: >>b'Content-Length: 263\\r\\n'<<
+
+2023-05-29 13:38:46,937 - Debug Adapter (ReaderThread) - DEBUG - read line: >>b'\\r\\n'<<
+
+2023-05-29 13:38:46,937 - Debug Adapter(Command Processor) - DEBUG - Got json: {
+    "arguments": {
+        "__sessionId": "4914781b-2244-49ba-bf44-d2577118b59f",
+        "elfFilePath": "/home/alex/esp32/test-queue/build/test-queue.elf",
+        "name": "GDB QEMU",
+        "request": "launch",
+        "sessionID": "qemu.debug.session",
+        "type": "espidf"
+    },
+    "command": "launch",
+    "seq": 2,
+    "type": "request"
+}
+2023-05-29 13:38:46,937 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Got json: {\n    \"arguments\": {\n        \"__sessionId\": \"4914781b-2244-49ba-bf44-d2577118b59f\",\n        \"elfFilePath\": \"/home/alex/esp32/test-queue/build/test-queue.elf\",\n        \"name\": \"GDB QEMU\",\n        \"request\": \"launch\",\n        \"sessionID\": \"qemu.debug.session\",\n        \"type\": \"espidf\"\n    },\n    \"command\": \"launch\",\n    \"seq\": 2,\n    \"type\": \"request\"\n}\n", "source": {}}, "seq": 11}
+
+2023-05-29 13:38:46,938 - Gdb - DEBUG - MI->: -interpreter-exec console "source /home/alex/esp32/test-queue/esp-idf-vscode-generated.gdb"
+2023-05-29 13:38:51,938 - Gdb - DEBUG - MI<-:
+[{'message': 'thread-group-started',
+  'payload': {'id': 'i1', 'pid': '1'},
+  'stream': 'stdout',
+  'token': None,
+  'type': 'notify'},
+ {'message': 'thread-created',
+  'payload': {'group-id': 'i1', 'id': '1'},
+  'stream': 'stdout',
+  'token': None,
+  'type': 'notify'},
+ {'message': 'thread-created',
+  'payload': {'group-id': 'i1', 'id': '2'},
+  'stream': 'stdout',
+  'token': None,
+  'type': 'notify'},
+ {'message': None,
+  'payload': '0x40000400 in ?? ()\\n',
+  'stream': 'stdout',
+  'type': 'console'},
+ {'message': 'stopped',
+  'payload': {'frame': {'addr': '0x40000400',
+                        'arch': 'xtensa',
+                        'args': [],
+                        'func': '??'},
+              'stopped-threads': 'all',
+              'thread-id': '1'},
+  'stream': 'stdout',
+  'token': None,
+  'type': 'notify'},
+ {'message': None,
+  'payload': 'Temporary breakpoint 1 at 0x400d50bb: file '
+             '/home/alex/esp32/test-queue/main/main.c, line 5.\\n',
+  'stream': 'stdout',
+  'type': 'console'},
+ {'message': 'breakpoint-created',
+  'payload': {'bkpt': {'addr': '0x400d50bb',
+                       'disp': 'del',
+                       'enabled': 'y',
+                       'file': '/home/alex/esp32/test-queue/main/main.c',
+                       'fullname': '/home/alex/esp32/test-queue/main/main.c',
+                       'func': 'app_main',
+                       'line': '5',
+                       'number': '1',
+                       'original-location': 'app_main',
+                       'thread-groups': ['i1'],
+                       'times': '0',
+                       'type': 'breakpoint'}},
+  'stream': 'stdout',
+  'token': None,
+  'type': 'notify'},
+ {'message': 'running',
+  'payload': None,
+  'stream': 'stdout',
+  'token': None,
+  'type': 'result'},
+ {'message': 'running',
+  'payload': {'thread-id': 'all'},
+  'stream': 'stdout',
+  'token': None,
+  'type': 'notify'},
+ {'message': 'breakpoint-modified',
+  'payload': {'bkpt': {'addr': '0x400d50bb',
+                       'disp': 'del',
+                       'enabled': 'y',
+                       'file': '/home/alex/esp32/test-queue/main/main.c',
+                       'fullname': '/home/alex/esp32/test-queue/main/main.c',
+                       'func': 'app_main',
+                       'line': '5',
+                       'number': '1',
+                       'original-location': 'app_main',
+                       'thread-groups': ['i1'],
+                       'times': '1',
+                       'type': 'breakpoint'}},
+  'stream': 'stdout',
+  'token': None,
+  'type': 'notify'},
+ {'message': None, 'payload': '\\n', 'stream': 'stdout', 'type': 'console'},
+ {'message': None,
+  'payload': 'Thread 1 hit Temporary breakpoint 1, app_main () at '
+             '/home/alex/esp32/test-queue/main/main.c:5\\n',
+  'stream': 'stdout',
+  'type': 'console'},
+ {'message': None,
+  'payload': '5\\t    printf(\\"it\'s alive\'n\\");\\n',
+  'stream': 'stdout',
+  'type': 'console'},
+ {'message': 'stopped',
+  'payload': {'bkptno': '1',
+              'disp': 'del',
+              'frame': {'addr': '0x400d50bb',
+                        'arch': 'xtensa',
+                        'args': [],
+                        'file': '/home/alex/esp32/test-queue/main/main.c',
+                        'fullname': '/home/alex/esp32/test-queue/main/main.c',
+                        'func': 'app_main',
+                        'line': '5'},
+              'reason': 'breakpoint-hit',
+              'stopped-threads': 'all',
+              'thread-id': '1'},
+  'stream': 'stdout',
+  'token': None,
+  'type': 'notify'},
+ {'message': 'breakpoint-deleted',
+  'payload': {'id': '1'},
+  'stream': 'stdout',
+  'token': None,
+  'type': 'notify'}]
+2023-05-29 13:38:51,939 - Gdb - INFO - NOTIFY: thread-group-started {'id': 'i1', 'pid': '1'}
+2023-05-29 13:38:51,939 - Gdb - INFO - NOTIFY: thread-created {'group-id': 'i1', 'id': '1'}
+2023-05-29 13:38:51,939 - Gdb - INFO - NOTIFY: thread-created {'group-id': 'i1', 'id': '2'}
+2023-05-29 13:38:51,939 - Gdb - INFO - CONS: '0x40000400 in ?? ()\\n'
+2023-05-29 13:38:51,939 - Gdb - INFO - NOTIFY: stopped {'frame': {'addr': '0x40000400', 'arch': 'xtensa', 'args': [], 'func': '??'},
+ 'stopped-threads': 'all',
+ 'thread-id': '1'}
+2023-05-29 13:38:51,939 - Gdb - INFO - CONS: ('Temporary breakpoint 1 at 0x400d50bb: file '
+ '/home/alex/esp32/test-queue/main/main.c, line 5.\\n')
+2023-05-29 13:38:51,939 - Gdb - INFO - NOTIFY: breakpoint-created {'bkpt': {'addr': '0x400d50bb',
+          'disp': 'del',
+          'enabled': 'y',
+          'file': '/home/alex/esp32/test-queue/main/main.c',
+          'fullname': '/home/alex/esp32/test-queue/main/main.c',
+          'func': 'app_main',
+          'line': '5',
+          'number': '1',
+          'original-location': 'app_main',
+          'thread-groups': ['i1'],
+          'times': '0',
+          'type': 'breakpoint'}}
+2023-05-29 13:38:51,939 - Gdb - DEBUG - RESULT: running None
+2023-05-29 13:38:52,440 - Gdb - INFO - NOTIFY: running {'thread-id': 'all'}
+2023-05-29 13:38:52,440 - Gdb - INFO - NOTIFY: breakpoint-modified {'bkpt': {'addr': '0x400d50bb',
+          'disp': 'del',
+          'enabled': 'y',
+          'file': '/home/alex/esp32/test-queue/main/main.c',
+          'fullname': '/home/alex/esp32/test-queue/main/main.c',
+          'func': 'app_main',
+          'line': '5',
+          'number': '1',
+          'original-location': 'app_main',
+          'thread-groups': ['i1'],
+          'times': '1',
+          'type': 'breakpoint'}}
+2023-05-29 13:38:52,445 - Gdb - INFO - CONS: '\\n'
+2023-05-29 13:38:52,446 - Gdb - INFO - CONS: ('Thread 1 hit Temporary breakpoint 1, app_main () at '
+ '/home/alex/esp32/test-queue/main/main.c:5\\n')
+2023-05-29 13:38:52,446 - Gdb - INFO - CONS: '5\\t    printf(\\"it\'s alive\'n\\");\\n'
+2023-05-29 13:38:52,446 - Gdb - INFO - NOTIFY: stopped {'bkptno': '1',
+ 'disp': 'del',
+ 'frame': {'addr': '0x400d50bb',
+           'arch': 'xtensa',
+           'args': [],
+           'file': '/home/alex/esp32/test-queue/main/main.c',
+           'fullname': '/home/alex/esp32/test-queue/main/main.c',
+           'func': 'app_main',
+           'line': '5'},
+ 'reason': 'breakpoint-hit',
+ 'stopped-threads': 'all',
+ 'thread-id': '1'}
+2023-05-29 13:38:52,446 - Gdb - INFO - NOTIFY: breakpoint-deleted {'id': '1'}
+2023-05-29 13:38:52,446 - Gdb - DEBUG - MI->: -thread-info
+2023-05-29 13:38:52,452 - Gdb - DEBUG - MI<-:
+[{'message': 'done',
+  'payload': {'current-thread-id': '1',
+              'threads': [{'details': 'CPU#0 [running]',
+                           'frame': {'addr': '0x400d50bb',
+                                     'arch': 'xtensa',
+                                     'args': [],
+                                     'file': '/home/alex/esp32/test-queue/main/main.c',
+                                     'fullname': '/home/alex/esp32/test-queue/main/main.c',
+                                     'func': 'app_main',
+                                     'level': '0',
+                                     'line': '5'},
+                           'id': '1',
+                           'state': 'stopped',
+                           'target-id': 'Thread 1.1'},
+                          {'details': 'CPU#1 [running]',
+                           'frame': {'addr': '0x400d6d91',
+                                     'arch': 'xtensa',
+                                     'args': [],
+                                     'file': '/opt/esp/idf/components/esp_system/task_wdt/task_wdt.c',
+                                     'fullname': '/opt/esp/idf/components/esp_system/task_wdt/task_wdt.c',
+                                     'func': 'esp_task_wdt_reset',
+                                     'level': '0',
+                                     'line': '789'},
+                           'id': '2',
+                           'state': 'stopped',
+                           'target-id': 'Thread 1.2'}]},
+  'stream': 'stdout',
+  'token': None,
+  'type': 'result'}]
+2023-05-29 13:38:52,452 - Gdb - DEBUG - RESULT: done {'current-thread-id': '1',
+ 'threads': [{'details': 'CPU#0 [running]',
+              'frame': {'addr': '0x400d50bb',
+                        'arch': 'xtensa',
+                        'args': [],
+                        'file': '/home/alex/esp32/test-queue/main/main.c',
+                        'fullname': '/home/alex/esp32/test-queue/main/main.c',
+                        'func': 'app_main',
+                        'level': '0',
+                        'line': '5'},
+              'id': '1',
+              'state': 'stopped',
+              'target-id': 'Thread 1.1'},
+             {'details': 'CPU#1 [running]',
+              'frame': {'addr': '0x400d6d91',
+                        'arch': 'xtensa',
+                        'args': [],
+                        'file': '/opt/esp/idf/components/esp_system/task_wdt/task_wdt.c',
+                        'fullname': '/opt/esp/idf/components/esp_system/task_wdt/task_wdt.c',
+                        'func': 'esp_task_wdt_reset',
+                        'level': '0',
+                        'line': '789'},
+              'id': '2',
+              'state': 'stopped',
+              'target-id': 'Thread 1.2'}]}
+2023-05-29 13:38:52,452 - Debug Adapter(Command Processor) - DEBUG - Processed command: launch
+2023-05-29 13:38:52,452 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "stopped", "body": {"reason": "breakpoint", "description": "Stopped with reason: breakpoint", "threadId": 1, "allThreadsStopped": true}, "seq": 12}
+
+2023-05-29 13:38:52,453 - Debug Adapter (ReaderThread) - DEBUG - read line: >>b'Content-Length: 88\\r\\n'<<
+
+2023-05-29 13:38:52,453 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "response", "request_seq": 2, "success": true, "command": "launch", "seq": 13}
+
+2023-05-29 13:38:52,453 - Debug Adapter (ReaderThread) - DEBUG - read line: >>b'\\r\\n'<<
+
+2023-05-29 13:38:52,453 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Debug Adapter is running\n", "source": {}}, "seq": 14}
+
+2023-05-29 13:38:52,453 - Debug Adapter(Command Processor) - DEBUG - Got json: {
+    "arguments": {
+        "breakpoints": []
+    },
+    "command": "setDataBreakpoints",
+    "seq": 3,
+    "type": "request"
+}
+2023-05-29 13:38:52,453 - Debug Adapter(Command Processor) - DEBUG - Processed command: setDataBreakpoints
+2023-05-29 13:38:52,453 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Processed command: launch\n", "source": {}}, "seq": 15}
+
+2023-05-29 13:38:52,453 - Debug Adapter (ReaderThread) - DEBUG - read line: >>b'Content-Length: 95\\r\\n'<<
+
+2023-05-29 13:38:52,454 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Got json: {\n    \"arguments\": {\n        \"breakpoints\": []\n    },\n    \"command\": \"setDataBreakpoints\",\n    \"seq\": 3,\n    \"type\": \"request\"\n}\n", "source": {}}, "seq": 16}
+
+2023-05-29 13:38:52,454 - Debug Adapter (ReaderThread) - DEBUG - read line: >>b'\\r\\n'<<
+
+2023-05-29 13:38:52,454 - Debug Adapter(Command Processor) - DEBUG - Got json: {
+    "arguments": {
+        "breakpoints": []
+    },
+    "command": "setInstructionBreakpoints",
+    "seq": 4,
+    "type": "request"
+}
+2023-05-29 13:38:52,454 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "response", "request_seq": 3, "success": true, "command": "setDataBreakpoints", "body": {"breakpoints": []}, "seq": 17}
+
+2023-05-29 13:38:52,454 - Debug Adapter(Command Processor) - DEBUG - Processed command: setInstructionBreakpoints
+2023-05-29 13:38:52,454 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Processed command: setDataBreakpoints\n", "source": {}}, "seq": 18}
+
+2023-05-29 13:38:52,454 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Got json: {\n    \"arguments\": {\n        \"breakpoints\": []\n    },\n    \"command\": \"setInstructionBreakpoints\",\n    \"seq\": 4,\n    \"type\": \"request\"\n}\n", "source": {}}, "seq": 19}
+
+2023-05-29 13:38:52,454 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "response", "request_seq": 4, "success": true, "command": "setInstructionBreakpoints", "body": {"breakpoints": []}, "seq": 20}
+
+2023-05-29 13:38:52,454 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Processed command: setInstructionBreakpoints\n", "source": {}}, "seq": 21}
+
+2023-05-29 13:38:52,476 - Debug Adapter (ReaderThread) - DEBUG - read line: >>b'Content-Length: 46\\r\\n'<<
+
+2023-05-29 13:38:52,476 - Debug Adapter (ReaderThread) - DEBUG - read line: >>b'\\r\\n'<<
+
+2023-05-29 13:38:52,476 - Debug Adapter(Command Processor) - DEBUG - Got json: {
+    "command": "threads",
+    "seq": 5,
+    "type": "request"
+}
+2023-05-29 13:38:52,476 - Debug Adapter(Command Processor) - DEBUG - Processed command: threads
+2023-05-29 13:38:52,476 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Got json: {\n    \"command\": \"threads\",\n    \"seq\": 5,\n    \"type\": \"request\"\n}\n", "source": {}}, "seq": 22}
+
+2023-05-29 13:38:52,476 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "response", "request_seq": 5, "success": true, "command": "threads", "body": {"threads": [{"id": 1, "name": "id - 1, frame -app_main, targetID - Thread 1.1"}, {"id": 2, "name": "id - 2, frame -esp_task_wdt_reset, targetID - Thread 1.2"}]}, "seq": 23}
+
+2023-05-29 13:38:52,476 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Processed command: threads\n", "source": {}}, "seq": 24}
+
+2023-05-29 13:38:52,560 - Debug Adapter (ReaderThread) - DEBUG - read line: >>b'Content-Length: 56\\r\\n'<<
+
+2023-05-29 13:38:52,560 - Debug Adapter (ReaderThread) - DEBUG - read line: >>b'\\r\\n'<<
+
+2023-05-29 13:38:52,560 - Debug Adapter(Command Processor) - DEBUG - Got json: {
+    "arguments": {},
+    "command": "configurationDone",
+    "seq": 6,
+    "type": "request"
+}
+2023-05-29 13:38:52,560 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Got json: {\n    \"arguments\": {},\n    \"command\": \"configurationDone\",\n    \"seq\": 6,\n    \"type\": \"request\"\n}\n", "source": {}}, "seq": 25}
+
+2023-05-29 13:38:52,560 - Debug Adapter(Command Processor) - DEBUG - Processed command: configurationDone
+2023-05-29 13:38:52,561 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "response", "request_seq": 6, "success": true, "command": "configurationDone", "seq": 26}
+
+2023-05-29 13:38:52,561 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Processed command: configurationDone\n", "source": {}}, "seq": 27}
+
+2023-05-29 13:38:52,567 - Debug Adapter (ReaderThread) - DEBUG - read line: >>b'Content-Length: 103\\r\\n'<<
+
+2023-05-29 13:38:52,568 - Debug Adapter (ReaderThread) - DEBUG - read line: >>b'\\r\\n'<<
+
+2023-05-29 13:38:52,568 - Debug Adapter(Command Processor) - DEBUG - Got json: {
+    "arguments": {
+        "format": {},
+        "levels": 20,
+        "startFrame": 0,
+        "threadId": 1
+    },
+    "command": "stackTrace",
+    "seq": 7,
+    "type": "request"
+}
+2023-05-29 13:38:52,568 - Gdb - DEBUG - MI->: -thread-select 1
+2023-05-29 13:38:52,568 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Got json: {\n    \"arguments\": {\n        \"format\": {},\n        \"levels\": 20,\n        \"startFrame\": 0,\n        \"threadId\": 1\n    },\n    \"command\": \"stackTrace\",\n    \"seq\": 7,\n    \"type\": \"request\"\n}\n", "source": {}}, "seq": 28}
+
+2023-05-29 13:38:52,569 - Gdb - DEBUG - MI<-:
+[{'message': 'done',
+  'payload': {'frame': {'addr': '0x400d50bb',
+                        'arch': 'xtensa',
+                        'args': [],
+                        'file': '/home/alex/esp32/test-queue/main/main.c',
+                        'fullname': '/home/alex/esp32/test-queue/main/main.c',
+                        'func': 'app_main',
+                        'level': '0',
+                        'line': '5'},
+              'new-thread-id': '1'},
+  'stream': 'stdout',
+  'token': None,
+  'type': 'result'}]
+2023-05-29 13:38:52,569 - Gdb - DEBUG - RESULT: done {'frame': {'addr': '0x400d50bb',
+           'arch': 'xtensa',
+           'args': [],
+           'file': '/home/alex/esp32/test-queue/main/main.c',
+           'fullname': '/home/alex/esp32/test-queue/main/main.c',
+           'func': 'app_main',
+           'level': '0',
+           'line': '5'},
+ 'new-thread-id': '1'}
+2023-05-29 13:38:52,569 - Gdb - DEBUG - MI->: -stack-list-frames
+2023-05-29 13:38:52,574 - Gdb - DEBUG - MI<-:
+[{'message': 'done',
+  'payload': {'stack': [{'addr': '0x400d50bb',
+                         'arch': 'xtensa',
+                         'file': '/home/alex/esp32/test-queue/main/main.c',
+                         'fullname': '/home/alex/esp32/test-queue/main/main.c',
+                         'func': 'app_main',
+                         'level': '0',
+                         'line': '5'},
+                        {'addr': '0x400e2f7f',
+                         'arch': 'xtensa',
+                         'file': '/opt/esp/idf/components/freertos/app_startup.c',
+                         'fullname': '/opt/esp/idf/components/freertos/app_startup.c',
+                         'func': 'main_task',
+                         'level': '1',
+                         'line': '208'},
+                        {'addr': '0x40087b68',
+                         'arch': 'xtensa',
+                         'file': '/opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c',
+                         'fullname': '/opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c',
+                         'func': 'vPortTaskWrapper',
+                         'level': '2',
+                         'line': '162'}]},
+  'stream': 'stdout',
+  'token': None,
+  'type': 'result'}]
+2023-05-29 13:38:52,574 - Gdb - DEBUG - RESULT: done {'stack': [{'addr': '0x400d50bb',
+            'arch': 'xtensa',
+            'file': '/home/alex/esp32/test-queue/main/main.c',
+            'fullname': '/home/alex/esp32/test-queue/main/main.c',
+            'func': 'app_main',
+            'level': '0',
+            'line': '5'},
+           {'addr': '0x400e2f7f',
+            'arch': 'xtensa',
+            'file': '/opt/esp/idf/components/freertos/app_startup.c',
+            'fullname': '/opt/esp/idf/components/freertos/app_startup.c',
+            'func': 'main_task',
+            'level': '1',
+            'line': '208'},
+           {'addr': '0x40087b68',
+            'arch': 'xtensa',
+            'file': '/opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c',
+            'fullname': '/opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c',
+            'func': 'vPortTaskWrapper',
+            'level': '2',
+            'line': '162'}]}
+2023-05-29 13:38:52,574 - Debug Adapter(Command Processor) - DEBUG - Processed command: stackTrace
+2023-05-29 13:38:52,574 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "response", "request_seq": 7, "success": true, "command": "stackTrace", "body": {"stackFrames": [{"id": 1000, "name": "app_main", "line": 5, "column": 0, "source": {"path": "/home/alex/esp32/test-queue/main/main.c"}, "instructionPointerReference": "0x400d50bb"}, {"id": 1001, "name": "main_task", "line": 208, "column": 0, "source": {"path": "/opt/esp/idf/components/freertos/app_startup.c"}, "instructionPointerReference": "0x400e2f7f"}, {"id": 1002, "name": "vPortTaskWrapper", "line": 162, "column": 0, "source": {"path": "/opt/esp/idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c"}, "instructionPointerReference": "0x40087b68"}], "totalFrames": 3}, "seq": 29}
+
+2023-05-29 13:38:52,575 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Processed command: stackTrace\n", "source": {}}, "seq": 30}
+
+2023-05-29 13:38:52,577 - Debug Adapter (ReaderThread) - DEBUG - read line: >>b'Content-Length: 46\\r\\n'<<
+
+2023-05-29 13:38:52,577 - Debug Adapter (ReaderThread) - DEBUG - read line: >>b'\\r\\n'<<
+
+2023-05-29 13:38:52,577 - Debug Adapter(Command Processor) - DEBUG - Got json: {
+    "command": "threads",
+    "seq": 8,
+    "type": "request"
+}
+2023-05-29 13:38:52,577 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Got json: {\n    \"command\": \"threads\",\n    \"seq\": 8,\n    \"type\": \"request\"\n}\n", "source": {}}, "seq": 31}
+
+2023-05-29 13:38:52,577 - Debug Adapter(Command Processor) - DEBUG - Processed command: threads
+2023-05-29 13:38:52,578 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "response", "request_seq": 8, "success": true, "command": "threads", "body": {"threads": [{"id": 1, "name": "id - 1, frame -app_main, targetID - Thread 1.1"}, {"id": 2, "name": "id - 2, frame -esp_task_wdt_reset, targetID - Thread 1.2"}]}, "seq": 32}
+
+2023-05-29 13:38:52,578 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Processed command: threads\n", "source": {}}, "seq": 33}
+
+2023-05-29 13:38:53,001 - Debug Adapter (ReaderThread) - DEBUG - read line: >>b'Content-Length: 74\\r\\n'<<
+
+2023-05-29 13:38:53,002 - Debug Adapter (ReaderThread) - DEBUG - read line: >>b'\\r\\n'<<
+
+2023-05-29 13:38:53,002 - Debug Adapter(Command Processor) - DEBUG - Got json: {
+    "arguments": {
+        "frameId": 1000
+    },
+    "command": "scopes",
+    "seq": 9,
+    "type": "request"
+}
+2023-05-29 13:38:53,002 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Got json: {\n    \"arguments\": {\n        \"frameId\": 1000\n    },\n    \"command\": \"scopes\",\n    \"seq\": 9,\n    \"type\": \"request\"\n}\n", "source": {}}, "seq": 34}
+
+2023-05-29 13:38:53,003 - Gdb - DEBUG - MI->: -thread-select 1
+2023-05-29 13:38:53,006 - Gdb - DEBUG - MI<-:
+[{'message': 'done',
+  'payload': {'frame': {'addr': '0x400d50bb',
+                        'arch': 'xtensa',
+                        'args': [],
+                        'file': '/home/alex/esp32/test-queue/main/main.c',
+                        'fullname': '/home/alex/esp32/test-queue/main/main.c',
+                        'func': 'app_main',
+                        'level': '0',
+                        'line': '5'},
+              'new-thread-id': '1'},
+  'stream': 'stdout',
+  'token': None,
+  'type': 'result'}]
+2023-05-29 13:38:53,006 - Gdb - DEBUG - RESULT: done {'frame': {'addr': '0x400d50bb',
+           'arch': 'xtensa',
+           'args': [],
+           'file': '/home/alex/esp32/test-queue/main/main.c',
+           'fullname': '/home/alex/esp32/test-queue/main/main.c',
+           'func': 'app_main',
+           'level': '0',
+           'line': '5'},
+ 'new-thread-id': '1'}
+2023-05-29 13:38:53,006 - Gdb - DEBUG - MI->: -stack-select-frame 0
+2023-05-29 13:38:53,007 - Gdb - DEBUG - MI<-:
+[{'message': 'done',
+  'payload': None,
+  'stream': 'stdout',
+  'token': None,
+  'type': 'result'}]
+2023-05-29 13:38:53,007 - Gdb - DEBUG - RESULT: done None
+2023-05-29 13:38:53,007 - Gdb - DEBUG - MI->: -stack-list-locals 0
+2023-05-29 13:38:53,008 - Gdb - DEBUG - MI<-:
+[{'message': 'done',
+  'payload': {'locals': []},
+  'stream': 'stdout',
+  'token': None,
+  'type': 'result'}]
+2023-05-29 13:38:53,008 - Gdb - DEBUG - RESULT: done {'locals': []}
+2023-05-29 13:38:53,008 - Gdb - DEBUG - MI->: -data-list-register-names 
+2023-05-29 13:38:53,015 - Gdb - DEBUG - MI<-:
+[{'message': 'done',
+  'payload': {'register-names': ['pc',
+                                 'ar0',
+                                 'ar1',
+                                 'ar2',
+                                 'ar3',
+                                 'ar4',
+                                 'ar5',
+                                 'ar6',
+                                 'ar7',
+                                 'ar8',
+                                 'ar9',
+                                 'ar10',
+                                 'ar11',
+                                 'ar12',
+                                 'ar13',
+                                 'ar14',
+                                 'ar15',
+                                 'ar16',
+                                 'ar17',
+                                 'ar18',
+                                 'ar19',
+                                 'ar20',
+                                 'ar21',
+                                 'ar22',
+                                 'ar23',
+                                 'ar24',
+                                 'ar25',
+                                 'ar26',
+                                 'ar27',
+                                 'ar28',
+                                 'ar29',
+                                 'ar30',
+                                 'ar31',
+                                 'ar32',
+                                 'ar33',
+                                 'ar34',
+                                 'ar35',
+                                 'ar36',
+                                 'ar37',
+                                 'ar38',
+                                 'ar39',
+                                 'ar40',
+                                 'ar41',
+                                 'ar42',
+                                 'ar43',
+                                 'ar44',
+                                 'ar45',
+                                 'ar46',
+                                 'ar47',
+                                 'ar48',
+                                 'ar49',
+                                 'ar50',
+                                 'ar51',
+                                 'ar52',
+                                 'ar53',
+                                 'ar54',
+                                 'ar55',
+                                 'ar56',
+                                 'ar57',
+                                 'ar58',
+                                 'ar59',
+                                 'ar60',
+                                 'ar61',
+                                 'ar62',
+                                 'ar63',
+                                 'lbeg',
+                                 'lend',
+                                 'lcount',
+                                 'sar',
+                                 'windowbase',
+                                 'windowstart',
+                                 'configid0',
+                                 'configid1',
+                                 'ps',
+                                 'threadptr',
+                                 'br',
+                                 'scompare1',
+                                 'acclo',
+                                 'acchi',
+                                 'm0',
+                                 'm1',
+                                 'm2',
+                                 'm3',
+                                 'expstate',
+                                 'f64r_lo',
+                                 'f64r_hi',
+                                 'f64s',
+                                 'f0',
+                                 'f1',
+                                 'f2',
+                                 'f3',
+                                 'f4',
+                                 'f5',
+                                 'f6',
+                                 'f7',
+                                 'f8',
+                                 'f9',
+                                 'f10',
+                                 'f11',
+                                 'f12',
+                                 'f13',
+                                 'f14',
+                                 'f15',
+                                 'fcr',
+                                 'fsr',
+                                 'mmid',
+                                 'ibreakenable',
+                                 'memctl',
+                                 'atomctl',
+                                 'ddr',
+                                 'ibreaka0',
+                                 'ibreaka1',
+                                 'dbreaka0',
+                                 'dbreaka1',
+                                 'dbreakc0',
+                                 'dbreakc1',
+                                 'epc1',
+                                 'epc2',
+                                 'epc3',
+                                 'epc4',
+                                 'epc5',
+                                 'epc6',
+                                 'epc7',
+                                 'depc',
+                                 'eps2',
+                                 'eps3',
+                                 'eps4',
+                                 'eps5',
+                                 'eps6',
+                                 'eps7',
+                                 'excsave1',
+                                 'excsave2',
+                                 'excsave3',
+                                 'excsave4',
+                                 'excsave5',
+                                 'excsave6',
+                                 'excsave7',
+                                 'cpenable',
+                                 'interrupt',
+                                 'intset',
+                                 'intclear',
+                                 'intenable',
+                                 'vecbase',
+                                 'exccause',
+                                 'debugcause',
+                                 'ccount',
+                                 'prid',
+                                 'icount',
+                                 'icountlevel',
+                                 'excvaddr',
+                                 'ccompare0',
+                                 'ccompare1',
+                                 'ccompare2',
+                                 'misc0',
+                                 'misc1',
+                                 'misc2',
+                                 'misc3',
+                                 'a0',
+                                 'a1',
+                                 'a2',
+                                 'a3',
+                                 'a4',
+                                 'a5',
+                                 'a6',
+                                 'a7',
+                                 'a8',
+                                 'a9',
+                                 'a10',
+                                 'a11',
+                                 'a12',
+                                 'a13',
+                                 'a14',
+                                 'a15',
+                                 'b0',
+                                 'b1',
+                                 'b2',
+                                 'b3',
+                                 'b4',
+                                 'b5',
+                                 'b6',
+                                 'b7',
+                                 'b8',
+                                 'b9',
+                                 'b10',
+                                 'b11',
+                                 'b12',
+                                 'b13',
+                                 'b14',
+                                 'b15',
+                                 'psintlevel',
+                                 'psum',
+                                 'pswoe',
+                                 'psexcm',
+                                 'pscallinc',
+                                 'psowb',
+                                 'acc',
+                                 'dbnum',
+                                 'f64r',
+                                 'roundmode',
+                                 'invalidenable',
+                                 'divzeroenable',
+                                 'overflowenable',
+                                 'underflowenable',
+                                 'inexactenable',
+                                 'invalidflag',
+                                 'divzeroflag',
+                                 'overflowflag',
+                                 'underflowflag',
+                                 'inexactflag',
+                                 'fpreserved20',
+                                 'fpreserved20a',
+                                 'fpreserved5']},
+  'stream': 'stdout',
+  'token': None,
+  'type': 'result'}]
+2023-05-29 13:38:53,015 - Gdb - DEBUG - RESULT: done {'register-names': ['pc',
+                    'ar0',
+                    'ar1',
+                    'ar2',
+                    'ar3',
+                    'ar4',
+                    'ar5',
+                    'ar6',
+                    'ar7',
+                    'ar8',
+                    'ar9',
+                    'ar10',
+                    'ar11',
+                    'ar12',
+                    'ar13',
+                    'ar14',
+                    'ar15',
+                    'ar16',
+                    'ar17',
+                    'ar18',
+                    'ar19',
+                    'ar20',
+                    'ar21',
+                    'ar22',
+                    'ar23',
+                    'ar24',
+                    'ar25',
+                    'ar26',
+                    'ar27',
+                    'ar28',
+                    'ar29',
+                    'ar30',
+                    'ar31',
+                    'ar32',
+                    'ar33',
+                    'ar34',
+                    'ar35',
+                    'ar36',
+                    'ar37',
+                    'ar38',
+                    'ar39',
+                    'ar40',
+                    'ar41',
+                    'ar42',
+                    'ar43',
+                    'ar44',
+                    'ar45',
+                    'ar46',
+                    'ar47',
+                    'ar48',
+                    'ar49',
+                    'ar50',
+                    'ar51',
+                    'ar52',
+                    'ar53',
+                    'ar54',
+                    'ar55',
+                    'ar56',
+                    'ar57',
+                    'ar58',
+                    'ar59',
+                    'ar60',
+                    'ar61',
+                    'ar62',
+                    'ar63',
+                    'lbeg',
+                    'lend',
+                    'lcount',
+                    'sar',
+                    'windowbase',
+                    'windowstart',
+                    'configid0',
+                    'configid1',
+                    'ps',
+                    'threadptr',
+                    'br',
+                    'scompare1',
+                    'acclo',
+                    'acchi',
+                    'm0',
+                    'm1',
+                    'm2',
+                    'm3',
+                    'expstate',
+                    'f64r_lo',
+                    'f64r_hi',
+                    'f64s',
+                    'f0',
+                    'f1',
+                    'f2',
+                    'f3',
+                    'f4',
+                    'f5',
+                    'f6',
+                    'f7',
+                    'f8',
+                    'f9',
+                    'f10',
+                    'f11',
+                    'f12',
+                    'f13',
+                    'f14',
+                    'f15',
+                    'fcr',
+                    'fsr',
+                    'mmid',
+                    'ibreakenable',
+                    'memctl',
+                    'atomctl',
+                    'ddr',
+                    'ibreaka0',
+                    'ibreaka1',
+                    'dbreaka0',
+                    'dbreaka1',
+                    'dbreakc0',
+                    'dbreakc1',
+                    'epc1',
+                    'epc2',
+                    'epc3',
+                    'epc4',
+                    'epc5',
+                    'epc6',
+                    'epc7',
+                    'depc',
+                    'eps2',
+                    'eps3',
+                    'eps4',
+                    'eps5',
+                    'eps6',
+                    'eps7',
+                    'excsave1',
+                    'excsave2',
+                    'excsave3',
+                    'excsave4',
+                    'excsave5',
+                    'excsave6',
+                    'excsave7',
+                    'cpenable',
+                    'interrupt',
+                    'intset',
+                    'intclear',
+                    'intenable',
+                    'vecbase',
+                    'exccause',
+                    'debugcause',
+                    'ccount',
+                    'prid',
+                    'icount',
+                    'icountlevel',
+                    'excvaddr',
+                    'ccompare0',
+                    'ccompare1',
+                    'ccompare2',
+                    'misc0',
+                    'misc1',
+                    'misc2',
+                    'misc3',
+                    'a0',
+                    'a1',
+                    'a2',
+                    'a3',
+                    'a4',
+                    'a5',
+                    'a6',
+                    'a7',
+                    'a8',
+                    'a9',
+                    'a10',
+                    'a11',
+                    'a12',
+                    'a13',
+                    'a14',
+                    'a15',
+                    'b0',
+                    'b1',
+                    'b2',
+                    'b3',
+                    'b4',
+                    'b5',
+                    'b6',
+                    'b7',
+                    'b8',
+                    'b9',
+                    'b10',
+                    'b11',
+                    'b12',
+                    'b13',
+                    'b14',
+                    'b15',
+                    'psintlevel',
+                    'psum',
+                    'pswoe',
+                    'psexcm',
+                    'pscallinc',
+                    'psowb',
+                    'acc',
+                    'dbnum',
+                    'f64r',
+                    'roundmode',
+                    'invalidenable',
+                    'divzeroenable',
+                    'overflowenable',
+                    'underflowenable',
+                    'inexactenable',
+                    'invalidflag',
+                    'divzeroflag',
+                    'overflowflag',
+                    'underflowflag',
+                    'inexactflag',
+                    'fpreserved20',
+                    'fpreserved20a',
+                    'fpreserved5']}
+2023-05-29 13:38:53,015 - Gdb - DEBUG - MI->: -data-list-register-values  x 
+2023-05-29 13:38:53,028 - Gdb - DEBUG - MI<-:
+[{'message': 'done',
+  'payload': {'register-values': [{'number': '0', 'value': '0x400d50bb'},
+                                  {'number': '1', 'value': '0x800dbe5e'},
+                                  {'number': '2', 'value': '0x3ffaeb44'},
+                                  {'number': '3', 'value': '0x0'},
+                                  {'number': '4', 'value': '0x3ffb4ad4'},
+                                  {'number': '5', 'value': '0x3ffb4ab4'},
+                                  {'number': '6', 'value': '0x10'},
+                                  {'number': '7', 'value': '0xff0000'},
+                                  {'number': '8', 'value': '0xff000000'},
+                                  {'number': '9', 'value': '0x800827a5'},
+                                  {'number': '10', 'value': '0x3ffb4830'},
+                                  {'number': '11', 'value': '0x3ffb4850'},
+                                  {'number': '12', 'value': '0x19'},
+                                  {'number': '13', 'value': '0x3ffb4ab4'},
+                                  {'number': '14', 'value': '0x0'},
+                                  {'number': '15', 'value': '0x3ffb4a7c'},
+                                  {'number': '16', 'value': '0x0'},
+                                  {'number': '17', 'value': '0x80082758'},
+                                  {'number': '18', 'value': '0x3ffb4800'},
+                                  {'number': '19', 'value': '0x3ffb4850'},
+                                  {'number': '20', 'value': '0x4'},
+                                  {'number': '21', 'value': '0x19'},
+                                  {'number': '22', 'value': '0x80'},
+                                  {'number': '23', 'value': '0xffffffe7'},
+                                  {'number': '24', 'value': '0x19'},
+                                  {'number': '25', 'value': '0x80087b68'},
+                                  {'number': '26', 'value': '0x3ffb4c50'},
+                                  {'number': '27', 'value': '0x3f4028a0'},
+                                  {'number': '28', 'value': '0x1'},
+                                  {'number': '29', 'value': '0x0'},
+                                  {'number': '30', 'value': '0x0'},
+                                  {'number': '31', 'value': '0x1'},
+                                  {'number': '32', 'value': '0x0'},
+                                  {'number': '33', 'value': '0x800e2f7f'},
+                                  {'number': '34', 'value': '0x3ffb4c30'},
+                                  {'number': '35', 'value': '0x3'},
+                                  {'number': '36', 'value': '0x3f4028a0'},
+                                  {'number': '37', 'value': '0x3f402920'},
+                                  {'number': '38', 'value': '0x930'},
+                                  {'number': '39', 'value': '0x3f4028a0'},
+                                  {'number': '40', 'value': '0x0'},
+                                  {'number': '41', 'value': '0x8008a624'},
+                                  {'number': '42', 'value': '0x3ffb4bd0'},
+                                  {'number': '43', 'value': '0x400dbf50'},
+                                  {'number': '44', 'value': '0x3f4028a0'},
+                                  {'number': '45', 'value': '0x3f402920'},
+                                  {'number': '46', 'value': '0x3ffb4c30'},
+                                  {'number': '47', 'value': '0x3ffb4c10'},
+                                  {'number': '48', 'value': '0xc'},
+                                  {'number': '49', 'value': '0x800e3714'},
+                                  {'number': '50', 'value': '0x3ffb4ba0'},
+                                  {'number': '51', 'value': '0x32'},
+                                  {'number': '52', 'value': '0x3ffafbfc'},
+                                  {'number': '53', 'value': '0x3ffb4c10'},
+                                  {'number': '54', 'value': '0xc'},
+                                  {'number': '55', 'value': '0x3ffb2934'},
+                                  {'number': '56', 'value': '0xb33fffff'},
+                                  {'number': '57', 'value': '0x800dbf80'},
+                                  {'number': '58', 'value': '0x3ffb4880'},
+                                  {'number': '59', 'value': '0x32'},
+                                  {'number': '60', 'value': '0xffffffff'},
+                                  {'number': '61', 'value': '0x32'},
+                                  {'number': '62', 'value': '0x3ffb4a90'},
+                                  {'number': '63', 'value': '0x3ffb4890'},
+                                  {'number': '64', 'value': '0x2'},
+                                  {'number': '65', 'value': '0x400014fd'},
+                                  {'number': '66', 'value': '0x4000150d'},
+                                  {'number': '67', 'value': '0xfffffffd'},
+                                  {'number': '68', 'value': '0x4'},
+                                  {'number': '69', 'value': '0x8'},
+                                  {'number': '70', 'value': '0x140'},
+                                  {'number': '71', 'value': '0xc2bcfffe'},
+                                  {'number': '72', 'value': '0x1cc5fe96'},
+                                  {'number': '73', 'value': '0x60820'},
+                                  {'number': '74', 'value': '0x3ffabd20'},
+                                  {'number': '75', 'value': '0x0'},
+                                  {'number': '76', 'value': '0xb33fffff'},
+                                  {'number': '77', 'value': '0x0'},
+                                  {'number': '78', 'value': '0x0'},
+                                  {'number': '79', 'value': '0x0'},
+                                  {'number': '80', 'value': '0x0'},
+                                  {'number': '81', 'value': '0x0'},
+                                  {'number': '82', 'value': '0x0'},
+                                  {'number': '83', 'value': '0x0'},
+                                  {'number': '84', 'value': '0x0'},
+                                  {'number': '85', 'value': '0x0'},
+                                  {'number': '86', 'value': '0x0'},
+                                  {'number': '87', 'value': '0x0'},
+                                  {'number': '88', 'value': '0x0'},
+                                  {'number': '89', 'value': '0x0'},
+                                  {'number': '90', 'value': '0x0'},
+                                  {'number': '91', 'value': '0x0'},
+                                  {'number': '92', 'value': '0x0'},
+                                  {'number': '93', 'value': '0x0'},
+                                  {'number': '94', 'value': '0x0'},
+                                  {'number': '95', 'value': '0x0'},
+                                  {'number': '96', 'value': '0x0'},
+                                  {'number': '97', 'value': '0x0'},
+                                  {'number': '98', 'value': '0x0'},
+                                  {'number': '99', 'value': '0x0'},
+                                  {'number': '100', 'value': '0x0'},
+                                  {'number': '101', 'value': '0x0'},
+                                  {'number': '102', 'value': '0x0'},
+                                  {'number': '103', 'value': '0x0'},
+                                  {'number': '104', 'value': '0x0'},
+                                  {'number': '105', 'value': '0x0'},
+                                  {'number': '106', 'value': '0x0'},
+                                  {'number': '107', 'value': '0x0'},
+                                  {'number': '108', 'value': '0x15'},
+                                  {'number': '109', 'value': '0x0'},
+                                  {'number': '110', 'value': '0x0'},
+                                  {'number': '111', 'value': '0x0'},
+                                  {'number': '112', 'value': '0x0'},
+                                  {'number': '113', 'value': '0x0'},
+                                  {'number': '114', 'value': '0x0'},
+                                  {'number': '115', 'value': '0x0'},
+                                  {'number': '116', 'value': '0x4008a624'},
+                                  {'number': '117', 'value': '0x0'},
+                                  {'number': '118', 'value': '0x0'},
+                                  {'number': '119', 'value': '0x0'},
+                                  {'number': '120', 'value': '0x0'},
+                                  {'number': '121', 'value': '0x0'},
+                                  {'number': '122', 'value': '0x0'},
+                                  {'number': '123', 'value': '0x0'},
+                                  {'number': '124', 'value': '0x0'},
+                                  {'number': '125', 'value': '0x0'},
+                                  {'number': '126', 'value': '0x0'},
+                                  {'number': '127', 'value': '0x0'},
+                                  {'number': '128', 'value': '0x0'},
+                                  {'number': '129', 'value': '0x0'},
+                                  {'number': '130', 'value': '0x3ffb4aa0'},
+                                  {'number': '131', 'value': '0x40000954'},
+                                  {'number': '132', 'value': '0x40000a28'},
+                                  {'number': '133', 'value': '0x40000af8'},
+                                  {'number': '134', 'value': '0x40000c68'},
+                                  {'number': '135', 'value': '0x0'},
+                                  {'number': '136', 'value': '0x0'},
+                                  {'number': '137', 'value': '0x0'},
+                                  {'number': '138', 'value': '0x0'},
+                                  {'number': '139', 'value': '0x0'},
+                                  {'number': '140', 'value': '0x0'},
+                                  {'number': '141', 'value': '0x1300124c'},
+                                  {'number': '142', 'value': '0x40080000'},
+                                  {'number': '143', 'value': '0x4'},
+                                  {'number': '144', 'value': '0x0'},
+                                  {'number': '145', 'value': '0x163e1120'},
+                                  {'number': '146', 'value': '0xcdcd'},
+                                  {'number': '147', 'value': '0x0'},
+                                  {'number': '148', 'value': '0x0'},
+                                  {'number': '149', 'value': '0x0'},
+                                  {'number': '150', 'value': '0x1654f330'},
+                                  {'number': '151', 'value': '0x0'},
+                                  {'number': '152', 'value': '0x0'},
+                                  {'number': '153', 'value': '0x0'},
+                                  {'number': '154', 'value': '0x0'},
+                                  {'number': '155', 'value': '0x0'},
+                                  {'number': '156', 'value': '0x0'},
+                                  {'number': '157', 'value': '0x800e2f7f'},
+                                  {'number': '158', 'value': '0x3ffb4c30'},
+                                  {'number': '159', 'value': '0x3'},
+                                  {'number': '160', 'value': '0x3f4028a0'},
+                                  {'number': '161', 'value': '0x3f402920'},
+                                  {'number': '162', 'value': '0x930'},
+                                  {'number': '163', 'value': '0x3f4028a0'},
+                                  {'number': '164', 'value': '0x0'},
+                                  {'number': '165', 'value': '0x8008a624'},
+                                  {'number': '166', 'value': '0x3ffb4bd0'},
+                                  {'number': '167', 'value': '0x400dbf50'},
+                                  {'number': '168', 'value': '0x3f4028a0'},
+                                  {'number': '169', 'value': '0x3f402920'},
+                                  {'number': '170', 'value': '0x3ffb4c30'},
+                                  {'number': '171', 'value': '0x3ffb4c10'},
+                                  {'number': '172', 'value': '0xc'},
+                                  {'number': '173', 'value': '0x0'},
+                                  {'number': '174', 'value': '0x0'},
+                                  {'number': '175', 'value': '0x0'},
+                                  {'number': '176', 'value': '0x0'},
+                                  {'number': '177', 'value': '0x0'},
+                                  {'number': '178', 'value': '0x0'},
+                                  {'number': '179', 'value': '0x0'},
+                                  {'number': '180', 'value': '0x0'},
+                                  {'number': '181', 'value': '0x0'},
+                                  {'number': '182', 'value': '0x0'},
+                                  {'number': '183', 'value': '0x0'},
+                                  {'number': '184', 'value': '0x0'},
+                                  {'number': '185', 'value': '0x0'},
+                                  {'number': '186', 'value': '0x0'},
+                                  {'number': '187', 'value': '0x0'},
+                                  {'number': '188', 'value': '0x0'},
+                                  {'number': '189', 'value': '0x0'},
+                                  {'number': '190', 'value': '0x1'},
+                                  {'number': '191', 'value': '0x1'},
+                                  {'number': '192', 'value': '0x0'},
+                                  {'number': '193', 'value': '0x2'},
+                                  {'number': '194', 'value': '0x8'},
+                                  {'number': '195', 'value': '0x0'},
+                                  {'number': '196', 'value': '0x0'},
+                                  {'number': '197', 'value': '0x0'},
+                                  {'number': '198', 'value': '0x0'},
+                                  {'number': '199', 'value': '0x0'},
+                                  {'number': '200', 'value': '0x0'},
+                                  {'number': '201', 'value': '0x0'},
+                                  {'number': '202', 'value': '0x0'},
+                                  {'number': '203', 'value': '0x0'},
+                                  {'number': '204', 'value': '0x0'},
+                                  {'number': '205', 'value': '0x0'},
+                                  {'number': '206', 'value': '0x0'},
+                                  {'number': '207', 'value': '0x0'},
+                                  {'number': '208', 'value': '0x0'},
+                                  {'number': '209', 'value': '0x0'},
+                                  {'number': '210', 'value': '0x0'},
+                                  {'number': '211', 'value': '0x0'}]},
+  'stream': 'stdout',
+  'token': None,
+  'type': 'result'}]
+2023-05-29 13:38:53,030 - Gdb - DEBUG - RESULT: done {'register-values': [{'number': '0', 'value': '0x400d50bb'},
+                     {'number': '1', 'value': '0x800dbe5e'},
+                     {'number': '2', 'value': '0x3ffaeb44'},
+                     {'number': '3', 'value': '0x0'},
+                     {'number': '4', 'value': '0x3ffb4ad4'},
+                     {'number': '5', 'value': '0x3ffb4ab4'},
+                     {'number': '6', 'value': '0x10'},
+                     {'number': '7', 'value': '0xff0000'},
+                     {'number': '8', 'value': '0xff000000'},
+                     {'number': '9', 'value': '0x800827a5'},
+                     {'number': '10', 'value': '0x3ffb4830'},
+                     {'number': '11', 'value': '0x3ffb4850'},
+                     {'number': '12', 'value': '0x19'},
+                     {'number': '13', 'value': '0x3ffb4ab4'},
+                     {'number': '14', 'value': '0x0'},
+                     {'number': '15', 'value': '0x3ffb4a7c'},
+                     {'number': '16', 'value': '0x0'},
+                     {'number': '17', 'value': '0x80082758'},
+                     {'number': '18', 'value': '0x3ffb4800'},
+                     {'number': '19', 'value': '0x3ffb4850'},
+                     {'number': '20', 'value': '0x4'},
+                     {'number': '21', 'value': '0x19'},
+                     {'number': '22', 'value': '0x80'},
+                     {'number': '23', 'value': '0xffffffe7'},
+                     {'number': '24', 'value': '0x19'},
+                     {'number': '25', 'value': '0x80087b68'},
+                     {'number': '26', 'value': '0x3ffb4c50'},
+                     {'number': '27', 'value': '0x3f4028a0'},
+                     {'number': '28', 'value': '0x1'},
+                     {'number': '29', 'value': '0x0'},
+                     {'number': '30', 'value': '0x0'},
+                     {'number': '31', 'value': '0x1'},
+                     {'number': '32', 'value': '0x0'},
+                     {'number': '33', 'value': '0x800e2f7f'},
+                     {'number': '34', 'value': '0x3ffb4c30'},
+                     {'number': '35', 'value': '0x3'},
+                     {'number': '36', 'value': '0x3f4028a0'},
+                     {'number': '37', 'value': '0x3f402920'},
+                     {'number': '38', 'value': '0x930'},
+                     {'number': '39', 'value': '0x3f4028a0'},
+                     {'number': '40', 'value': '0x0'},
+                     {'number': '41', 'value': '0x8008a624'},
+                     {'number': '42', 'value': '0x3ffb4bd0'},
+                     {'number': '43', 'value': '0x400dbf50'},
+                     {'number': '44', 'value': '0x3f4028a0'},
+                     {'number': '45', 'value': '0x3f402920'},
+                     {'number': '46', 'value': '0x3ffb4c30'},
+                     {'number': '47', 'value': '0x3ffb4c10'},
+                     {'number': '48', 'value': '0xc'},
+                     {'number': '49', 'value': '0x800e3714'},
+                     {'number': '50', 'value': '0x3ffb4ba0'},
+                     {'number': '51', 'value': '0x32'},
+                     {'number': '52', 'value': '0x3ffafbfc'},
+                     {'number': '53', 'value': '0x3ffb4c10'},
+                     {'number': '54', 'value': '0xc'},
+                     {'number': '55', 'value': '0x3ffb2934'},
+                     {'number': '56', 'value': '0xb33fffff'},
+                     {'number': '57', 'value': '0x800dbf80'},
+                     {'number': '58', 'value': '0x3ffb4880'},
+                     {'number': '59', 'value': '0x32'},
+                     {'number': '60', 'value': '0xffffffff'},
+                     {'number': '61', 'value': '0x32'},
+                     {'number': '62', 'value': '0x3ffb4a90'},
+                     {'number': '63', 'value': '0x3ffb4890'},
+                     {'number': '64', 'value': '0x2'},
+                     {'number': '65', 'value': '0x400014fd'},
+                     {'number': '66', 'value': '0x4000150d'},
+                     {'number': '67', 'value': '0xfffffffd'},
+                     {'number': '68', 'value': '0x4'},
+                     {'number': '69', 'value': '0x8'},
+                     {'number': '70', 'value': '0x140'},
+                     {'number': '71', 'value': '0xc2bcfffe'},
+                     {'number': '72', 'value': '0x1cc5fe96'},
+                     {'number': '73', 'value': '0x60820'},
+                     {'number': '74', 'value': '0x3ffabd20'},
+                     {'number': '75', 'value': '0x0'},
+                     {'number': '76', 'value': '0xb33fffff'},
+                     {'number': '77', 'value': '0x0'},
+                     {'number': '78', 'value': '0x0'},
+                     {'number': '79', 'value': '0x0'},
+                     {'number': '80', 'value': '0x0'},
+                     {'number': '81', 'value': '0x0'},
+                     {'number': '82', 'value': '0x0'},
+                     {'number': '83', 'value': '0x0'},
+                     {'number': '84', 'value': '0x0'},
+                     {'number': '85', 'value': '0x0'},
+                     {'number': '86', 'value': '0x0'},
+                     {'number': '87', 'value': '0x0'},
+                     {'number': '88', 'value': '0x0'},
+                     {'number': '89', 'value': '0x0'},
+                     {'number': '90', 'value': '0x0'},
+                     {'number': '91', 'value': '0x0'},
+                     {'number': '92', 'value': '0x0'},
+                     {'number': '93', 'value': '0x0'},
+                     {'number': '94', 'value': '0x0'},
+                     {'number': '95', 'value': '0x0'},
+                     {'number': '96', 'value': '0x0'},
+                     {'number': '97', 'value': '0x0'},
+                     {'number': '98', 'value': '0x0'},
+                     {'number': '99', 'value': '0x0'},
+                     {'number': '100', 'value': '0x0'},
+                     {'number': '101', 'value': '0x0'},
+                     {'number': '102', 'value': '0x0'},
+                     {'number': '103', 'value': '0x0'},
+                     {'number': '104', 'value': '0x0'},
+                     {'number': '105', 'value': '0x0'},
+                     {'number': '106', 'value': '0x0'},
+                     {'number': '107', 'value': '0x0'},
+                     {'number': '108', 'value': '0x15'},
+                     {'number': '109', 'value': '0x0'},
+                     {'number': '110', 'value': '0x0'},
+                     {'number': '111', 'value': '0x0'},
+                     {'number': '112', 'value': '0x0'},
+                     {'number': '113', 'value': '0x0'},
+                     {'number': '114', 'value': '0x0'},
+                     {'number': '115', 'value': '0x0'},
+                     {'number': '116', 'value': '0x4008a624'},
+                     {'number': '117', 'value': '0x0'},
+                     {'number': '118', 'value': '0x0'},
+                     {'number': '119', 'value': '0x0'},
+                     {'number': '120', 'value': '0x0'},
+                     {'number': '121', 'value': '0x0'},
+                     {'number': '122', 'value': '0x0'},
+                     {'number': '123', 'value': '0x0'},
+                     {'number': '124', 'value': '0x0'},
+                     {'number': '125', 'value': '0x0'},
+                     {'number': '126', 'value': '0x0'},
+                     {'number': '127', 'value': '0x0'},
+                     {'number': '128', 'value': '0x0'},
+                     {'number': '129', 'value': '0x0'},
+                     {'number': '130', 'value': '0x3ffb4aa0'},
+                     {'number': '131', 'value': '0x40000954'},
+                     {'number': '132', 'value': '0x40000a28'},
+                     {'number': '133', 'value': '0x40000af8'},
+                     {'number': '134', 'value': '0x40000c68'},
+                     {'number': '135', 'value': '0x0'},
+                     {'number': '136', 'value': '0x0'},
+                     {'number': '137', 'value': '0x0'},
+                     {'number': '138', 'value': '0x0'},
+                     {'number': '139', 'value': '0x0'},
+                     {'number': '140', 'value': '0x0'},
+                     {'number': '141', 'value': '0x1300124c'},
+                     {'number': '142', 'value': '0x40080000'},
+                     {'number': '143', 'value': '0x4'},
+                     {'number': '144', 'value': '0x0'},
+                     {'number': '145', 'value': '0x163e1120'},
+                     {'number': '146', 'value': '0xcdcd'},
+                     {'number': '147', 'value': '0x0'},
+                     {'number': '148', 'value': '0x0'},
+                     {'number': '149', 'value': '0x0'},
+                     {'number': '150', 'value': '0x1654f330'},
+                     {'number': '151', 'value': '0x0'},
+                     {'number': '152', 'value': '0x0'},
+                     {'number': '153', 'value': '0x0'},
+                     {'number': '154', 'value': '0x0'},
+                     {'number': '155', 'value': '0x0'},
+                     {'number': '156', 'value': '0x0'},
+                     {'number': '157', 'value': '0x800e2f7f'},
+                     {'number': '158', 'value': '0x3ffb4c30'},
+                     {'number': '159', 'value': '0x3'},
+                     {'number': '160', 'value': '0x3f4028a0'},
+                     {'number': '161', 'value': '0x3f402920'},
+                     {'number': '162', 'value': '0x930'},
+                     {'number': '163', 'value': '0x3f4028a0'},
+                     {'number': '164', 'value': '0x0'},
+                     {'number': '165', 'value': '0x8008a624'},
+                     {'number': '166', 'value': '0x3ffb4bd0'},
+                     {'number': '167', 'value': '0x400dbf50'},
+                     {'number': '168', 'value': '0x3f4028a0'},
+                     {'number': '169', 'value': '0x3f402920'},
+                     {'number': '170', 'value': '0x3ffb4c30'},
+                     {'number': '171', 'value': '0x3ffb4c10'},
+                     {'number': '172', 'value': '0xc'},
+                     {'number': '173', 'value': '0x0'},
+                     {'number': '174', 'value': '0x0'},
+                     {'number': '175', 'value': '0x0'},
+                     {'number': '176', 'value': '0x0'},
+                     {'number': '177', 'value': '0x0'},
+                     {'number': '178', 'value': '0x0'},
+                     {'number': '179', 'value': '0x0'},
+                     {'number': '180', 'value': '0x0'},
+                     {'number': '181', 'value': '0x0'},
+                     {'number': '182', 'value': '0x0'},
+                     {'number': '183', 'value': '0x0'},
+                     {'number': '184', 'value': '0x0'},
+                     {'number': '185', 'value': '0x0'},
+                     {'number': '186', 'value': '0x0'},
+                     {'number': '187', 'value': '0x0'},
+                     {'number': '188', 'value': '0x0'},
+                     {'number': '189', 'value': '0x0'},
+                     {'number': '190', 'value': '0x1'},
+                     {'number': '191', 'value': '0x1'},
+                     {'number': '192', 'value': '0x0'},
+                     {'number': '193', 'value': '0x2'},
+                     {'number': '194', 'value': '0x8'},
+                     {'number': '195', 'value': '0x0'},
+                     {'number': '196', 'value': '0x0'},
+                     {'number': '197', 'value': '0x0'},
+                     {'number': '198', 'value': '0x0'},
+                     {'number': '199', 'value': '0x0'},
+                     {'number': '200', 'value': '0x0'},
+                     {'number': '201', 'value': '0x0'},
+                     {'number': '202', 'value': '0x0'},
+                     {'number': '203', 'value': '0x0'},
+                     {'number': '204', 'value': '0x0'},
+                     {'number': '205', 'value': '0x0'},
+                     {'number': '206', 'value': '0x0'},
+                     {'number': '207', 'value': '0x0'},
+                     {'number': '208', 'value': '0x0'},
+                     {'number': '209', 'value': '0x0'},
+                     {'number': '210', 'value': '0x0'},
+                     {'number': '211', 'value': '0x0'}]}
+2023-05-29 13:38:53,030 - Debug Adapter(Command Processor) - DEBUG - Processed command: scopes
+2023-05-29 13:38:53,030 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "response", "request_seq": 9, "success": true, "command": "scopes", "body": {"scopes": [{"name": "Locals", "variablesReference": 12, "expensive": false, "presentationHint": "locals", "source": {}}, {"name": "Registers", "variablesReference": 24, "expensive": false, "presentationHint": "registers", "source": {}}]}, "seq": 35}
+
+2023-05-29 13:38:53,030 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Processed command: scopes\n", "source": {}}, "seq": 36}
+
+2023-05-29 13:38:53,033 - Debug Adapter (ReaderThread) - DEBUG - read line: >>b'Content-Length: 87\\r\\n'<<
+
+2023-05-29 13:38:53,033 - Debug Adapter (ReaderThread) - DEBUG - read line: >>b'\\r\\n'<<
+
+2023-05-29 13:38:53,033 - Debug Adapter(Command Processor) - DEBUG - Got json: {
+    "arguments": {
+        "format": {},
+        "variablesReference": 12
+    },
+    "command": "variables",
+    "seq": 10,
+    "type": "request"
+}
+2023-05-29 13:38:53,033 - Gdb - DEBUG - MI->: -thread-select 1
+2023-05-29 13:38:53,033 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Got json: {\n    \"arguments\": {\n        \"format\": {},\n        \"variablesReference\": 12\n    },\n    \"command\": \"variables\",\n    \"seq\": 10,\n    \"type\": \"request\"\n}\n", "source": {}}, "seq": 37}
+
+2023-05-29 13:38:53,034 - Gdb - DEBUG - MI<-:
+[{'message': 'done',
+  'payload': {'frame': {'addr': '0x400d50bb',
+                        'arch': 'xtensa',
+                        'args': [],
+                        'file': '/home/alex/esp32/test-queue/main/main.c',
+                        'fullname': '/home/alex/esp32/test-queue/main/main.c',
+                        'func': 'app_main',
+                        'level': '0',
+                        'line': '5'},
+              'new-thread-id': '1'},
+  'stream': 'stdout',
+  'token': None,
+  'type': 'result'}]
+2023-05-29 13:38:53,034 - Gdb - DEBUG - RESULT: done {'frame': {'addr': '0x400d50bb',
+           'arch': 'xtensa',
+           'args': [],
+           'file': '/home/alex/esp32/test-queue/main/main.c',
+           'fullname': '/home/alex/esp32/test-queue/main/main.c',
+           'func': 'app_main',
+           'level': '0',
+           'line': '5'},
+ 'new-thread-id': '1'}
+2023-05-29 13:38:53,034 - Gdb - DEBUG - MI->: -stack-select-frame 0
+2023-05-29 13:38:53,034 - Gdb - DEBUG - MI<-:
+[{'message': 'done',
+  'payload': None,
+  'stream': 'stdout',
+  'token': None,
+  'type': 'result'}]
+2023-05-29 13:38:53,034 - Gdb - DEBUG - RESULT: done None
+2023-05-29 13:38:53,035 - Gdb - DEBUG - MI->: -stack-list-locals 1
+2023-05-29 13:38:53,035 - Gdb - DEBUG - MI<-:
+[{'message': 'done',
+  'payload': {'locals': []},
+  'stream': 'stdout',
+  'token': None,
+  'type': 'result'}]
+2023-05-29 13:38:53,035 - Gdb - DEBUG - RESULT: done {'locals': []}
+2023-05-29 13:38:53,035 - Debug Adapter(Command Processor) - DEBUG - Processed command: variables
+2023-05-29 13:38:53,035 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "response", "request_seq": 10, "success": true, "command": "variables", "body": {"variables": []}, "seq": 38}
+
+2023-05-29 13:38:53,035 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Processed command: variables\n", "source": {}}, "seq": 39}
+
+2023-05-29 13:39:12,598 - Debug Adapter (ReaderThread) - DEBUG - read line: >>b'Content-Length: 87\\r\\n'<<
+
+2023-05-29 13:39:12,598 - Debug Adapter (ReaderThread) - DEBUG - read line: >>b'\\r\\n'<<
+
+2023-05-29 13:39:12,598 - Debug Adapter(Command Processor) - DEBUG - Got json: {
+    "arguments": {
+        "format": {},
+        "variablesReference": 24
+    },
+    "command": "variables",
+    "seq": 11,
+    "type": "request"
+}
+2023-05-29 13:39:12,599 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Got json: {\n    \"arguments\": {\n        \"format\": {},\n        \"variablesReference\": 24\n    },\n    \"command\": \"variables\",\n    \"seq\": 11,\n    \"type\": \"request\"\n}\n", "source": {}}, "seq": 40}
+
+2023-05-29 13:39:12,599 - Gdb - DEBUG - MI->: -thread-select 1
+2023-05-29 13:39:12,602 - Gdb - DEBUG - MI<-:
+[{'message': 'done',
+  'payload': {'frame': {'addr': '0x400d50bb',
+                        'arch': 'xtensa',
+                        'args': [],
+                        'file': '/home/alex/esp32/test-queue/main/main.c',
+                        'fullname': '/home/alex/esp32/test-queue/main/main.c',
+                        'func': 'app_main',
+                        'level': '0',
+                        'line': '5'},
+              'new-thread-id': '1'},
+  'stream': 'stdout',
+  'token': None,
+  'type': 'result'}]
+2023-05-29 13:39:12,602 - Gdb - DEBUG - RESULT: done {'frame': {'addr': '0x400d50bb',
+           'arch': 'xtensa',
+           'args': [],
+           'file': '/home/alex/esp32/test-queue/main/main.c',
+           'fullname': '/home/alex/esp32/test-queue/main/main.c',
+           'func': 'app_main',
+           'level': '0',
+           'line': '5'},
+ 'new-thread-id': '1'}
+2023-05-29 13:39:12,602 - Gdb - DEBUG - MI->: -stack-select-frame 0
+2023-05-29 13:39:12,603 - Gdb - DEBUG - MI<-:
+[{'message': 'done',
+  'payload': None,
+  'stream': 'stdout',
+  'token': None,
+  'type': 'result'}]
+2023-05-29 13:39:12,603 - Gdb - DEBUG - RESULT: done None
+2023-05-29 13:39:12,603 - Gdb - DEBUG - MI->: -data-list-register-names 
+2023-05-29 13:39:12,608 - Gdb - DEBUG - MI<-:
+[{'message': 'done',
+  'payload': {'register-names': ['pc',
+                                 'ar0',
+                                 'ar1',
+                                 'ar2',
+                                 'ar3',
+                                 'ar4',
+                                 'ar5',
+                                 'ar6',
+                                 'ar7',
+                                 'ar8',
+                                 'ar9',
+                                 'ar10',
+                                 'ar11',
+                                 'ar12',
+                                 'ar13',
+                                 'ar14',
+                                 'ar15',
+                                 'ar16',
+                                 'ar17',
+                                 'ar18',
+                                 'ar19',
+                                 'ar20',
+                                 'ar21',
+                                 'ar22',
+                                 'ar23',
+                                 'ar24',
+                                 'ar25',
+                                 'ar26',
+                                 'ar27',
+                                 'ar28',
+                                 'ar29',
+                                 'ar30',
+                                 'ar31',
+                                 'ar32',
+                                 'ar33',
+                                 'ar34',
+                                 'ar35',
+                                 'ar36',
+                                 'ar37',
+                                 'ar38',
+                                 'ar39',
+                                 'ar40',
+                                 'ar41',
+                                 'ar42',
+                                 'ar43',
+                                 'ar44',
+                                 'ar45',
+                                 'ar46',
+                                 'ar47',
+                                 'ar48',
+                                 'ar49',
+                                 'ar50',
+                                 'ar51',
+                                 'ar52',
+                                 'ar53',
+                                 'ar54',
+                                 'ar55',
+                                 'ar56',
+                                 'ar57',
+                                 'ar58',
+                                 'ar59',
+                                 'ar60',
+                                 'ar61',
+                                 'ar62',
+                                 'ar63',
+                                 'lbeg',
+                                 'lend',
+                                 'lcount',
+                                 'sar',
+                                 'windowbase',
+                                 'windowstart',
+                                 'configid0',
+                                 'configid1',
+                                 'ps',
+                                 'threadptr',
+                                 'br',
+                                 'scompare1',
+                                 'acclo',
+                                 'acchi',
+                                 'm0',
+                                 'm1',
+                                 'm2',
+                                 'm3',
+                                 'expstate',
+                                 'f64r_lo',
+                                 'f64r_hi',
+                                 'f64s',
+                                 'f0',
+                                 'f1',
+                                 'f2',
+                                 'f3',
+                                 'f4',
+                                 'f5',
+                                 'f6',
+                                 'f7',
+                                 'f8',
+                                 'f9',
+                                 'f10',
+                                 'f11',
+                                 'f12',
+                                 'f13',
+                                 'f14',
+                                 'f15',
+                                 'fcr',
+                                 'fsr',
+                                 'mmid',
+                                 'ibreakenable',
+                                 'memctl',
+                                 'atomctl',
+                                 'ddr',
+                                 'ibreaka0',
+                                 'ibreaka1',
+                                 'dbreaka0',
+                                 'dbreaka1',
+                                 'dbreakc0',
+                                 'dbreakc1',
+                                 'epc1',
+                                 'epc2',
+                                 'epc3',
+                                 'epc4',
+                                 'epc5',
+                                 'epc6',
+                                 'epc7',
+                                 'depc',
+                                 'eps2',
+                                 'eps3',
+                                 'eps4',
+                                 'eps5',
+                                 'eps6',
+                                 'eps7',
+                                 'excsave1',
+                                 'excsave2',
+                                 'excsave3',
+                                 'excsave4',
+                                 'excsave5',
+                                 'excsave6',
+                                 'excsave7',
+                                 'cpenable',
+                                 'interrupt',
+                                 'intset',
+                                 'intclear',
+                                 'intenable',
+                                 'vecbase',
+                                 'exccause',
+                                 'debugcause',
+                                 'ccount',
+                                 'prid',
+                                 'icount',
+                                 'icountlevel',
+                                 'excvaddr',
+                                 'ccompare0',
+                                 'ccompare1',
+                                 'ccompare2',
+                                 'misc0',
+                                 'misc1',
+                                 'misc2',
+                                 'misc3',
+                                 'a0',
+                                 'a1',
+                                 'a2',
+                                 'a3',
+                                 'a4',
+                                 'a5',
+                                 'a6',
+                                 'a7',
+                                 'a8',
+                                 'a9',
+                                 'a10',
+                                 'a11',
+                                 'a12',
+                                 'a13',
+                                 'a14',
+                                 'a15',
+                                 'b0',
+                                 'b1',
+                                 'b2',
+                                 'b3',
+                                 'b4',
+                                 'b5',
+                                 'b6',
+                                 'b7',
+                                 'b8',
+                                 'b9',
+                                 'b10',
+                                 'b11',
+                                 'b12',
+                                 'b13',
+                                 'b14',
+                                 'b15',
+                                 'psintlevel',
+                                 'psum',
+                                 'pswoe',
+                                 'psexcm',
+                                 'pscallinc',
+                                 'psowb',
+                                 'acc',
+                                 'dbnum',
+                                 'f64r',
+                                 'roundmode',
+                                 'invalidenable',
+                                 'divzeroenable',
+                                 'overflowenable',
+                                 'underflowenable',
+                                 'inexactenable',
+                                 'invalidflag',
+                                 'divzeroflag',
+                                 'overflowflag',
+                                 'underflowflag',
+                                 'inexactflag',
+                                 'fpreserved20',
+                                 'fpreserved20a',
+                                 'fpreserved5']},
+  'stream': 'stdout',
+  'token': None,
+  'type': 'result'}]
+2023-05-29 13:39:12,608 - Gdb - DEBUG - RESULT: done {'register-names': ['pc',
+                    'ar0',
+                    'ar1',
+                    'ar2',
+                    'ar3',
+                    'ar4',
+                    'ar5',
+                    'ar6',
+                    'ar7',
+                    'ar8',
+                    'ar9',
+                    'ar10',
+                    'ar11',
+                    'ar12',
+                    'ar13',
+                    'ar14',
+                    'ar15',
+                    'ar16',
+                    'ar17',
+                    'ar18',
+                    'ar19',
+                    'ar20',
+                    'ar21',
+                    'ar22',
+                    'ar23',
+                    'ar24',
+                    'ar25',
+                    'ar26',
+                    'ar27',
+                    'ar28',
+                    'ar29',
+                    'ar30',
+                    'ar31',
+                    'ar32',
+                    'ar33',
+                    'ar34',
+                    'ar35',
+                    'ar36',
+                    'ar37',
+                    'ar38',
+                    'ar39',
+                    'ar40',
+                    'ar41',
+                    'ar42',
+                    'ar43',
+                    'ar44',
+                    'ar45',
+                    'ar46',
+                    'ar47',
+                    'ar48',
+                    'ar49',
+                    'ar50',
+                    'ar51',
+                    'ar52',
+                    'ar53',
+                    'ar54',
+                    'ar55',
+                    'ar56',
+                    'ar57',
+                    'ar58',
+                    'ar59',
+                    'ar60',
+                    'ar61',
+                    'ar62',
+                    'ar63',
+                    'lbeg',
+                    'lend',
+                    'lcount',
+                    'sar',
+                    'windowbase',
+                    'windowstart',
+                    'configid0',
+                    'configid1',
+                    'ps',
+                    'threadptr',
+                    'br',
+                    'scompare1',
+                    'acclo',
+                    'acchi',
+                    'm0',
+                    'm1',
+                    'm2',
+                    'm3',
+                    'expstate',
+                    'f64r_lo',
+                    'f64r_hi',
+                    'f64s',
+                    'f0',
+                    'f1',
+                    'f2',
+                    'f3',
+                    'f4',
+                    'f5',
+                    'f6',
+                    'f7',
+                    'f8',
+                    'f9',
+                    'f10',
+                    'f11',
+                    'f12',
+                    'f13',
+                    'f14',
+                    'f15',
+                    'fcr',
+                    'fsr',
+                    'mmid',
+                    'ibreakenable',
+                    'memctl',
+                    'atomctl',
+                    'ddr',
+                    'ibreaka0',
+                    'ibreaka1',
+                    'dbreaka0',
+                    'dbreaka1',
+                    'dbreakc0',
+                    'dbreakc1',
+                    'epc1',
+                    'epc2',
+                    'epc3',
+                    'epc4',
+                    'epc5',
+                    'epc6',
+                    'epc7',
+                    'depc',
+                    'eps2',
+                    'eps3',
+                    'eps4',
+                    'eps5',
+                    'eps6',
+                    'eps7',
+                    'excsave1',
+                    'excsave2',
+                    'excsave3',
+                    'excsave4',
+                    'excsave5',
+                    'excsave6',
+                    'excsave7',
+                    'cpenable',
+                    'interrupt',
+                    'intset',
+                    'intclear',
+                    'intenable',
+                    'vecbase',
+                    'exccause',
+                    'debugcause',
+                    'ccount',
+                    'prid',
+                    'icount',
+                    'icountlevel',
+                    'excvaddr',
+                    'ccompare0',
+                    'ccompare1',
+                    'ccompare2',
+                    'misc0',
+                    'misc1',
+                    'misc2',
+                    'misc3',
+                    'a0',
+                    'a1',
+                    'a2',
+                    'a3',
+                    'a4',
+                    'a5',
+                    'a6',
+                    'a7',
+                    'a8',
+                    'a9',
+                    'a10',
+                    'a11',
+                    'a12',
+                    'a13',
+                    'a14',
+                    'a15',
+                    'b0',
+                    'b1',
+                    'b2',
+                    'b3',
+                    'b4',
+                    'b5',
+                    'b6',
+                    'b7',
+                    'b8',
+                    'b9',
+                    'b10',
+                    'b11',
+                    'b12',
+                    'b13',
+                    'b14',
+                    'b15',
+                    'psintlevel',
+                    'psum',
+                    'pswoe',
+                    'psexcm',
+                    'pscallinc',
+                    'psowb',
+                    'acc',
+                    'dbnum',
+                    'f64r',
+                    'roundmode',
+                    'invalidenable',
+                    'divzeroenable',
+                    'overflowenable',
+                    'underflowenable',
+                    'inexactenable',
+                    'invalidflag',
+                    'divzeroflag',
+                    'overflowflag',
+                    'underflowflag',
+                    'inexactflag',
+                    'fpreserved20',
+                    'fpreserved20a',
+                    'fpreserved5']}
+2023-05-29 13:39:12,608 - Gdb - DEBUG - MI->: -data-list-register-values  x 
+2023-05-29 13:39:12,623 - Gdb - DEBUG - MI<-:
+[{'message': 'done',
+  'payload': {'register-values': [{'number': '0', 'value': '0x400d50bb'},
+                                  {'number': '1', 'value': '0x800dbe5e'},
+                                  {'number': '2', 'value': '0x3ffaeb44'},
+                                  {'number': '3', 'value': '0x0'},
+                                  {'number': '4', 'value': '0x3ffb4ad4'},
+                                  {'number': '5', 'value': '0x3ffb4ab4'},
+                                  {'number': '6', 'value': '0x10'},
+                                  {'number': '7', 'value': '0xff0000'},
+                                  {'number': '8', 'value': '0xff000000'},
+                                  {'number': '9', 'value': '0x800827a5'},
+                                  {'number': '10', 'value': '0x3ffb4830'},
+                                  {'number': '11', 'value': '0x3ffb4850'},
+                                  {'number': '12', 'value': '0x19'},
+                                  {'number': '13', 'value': '0x3ffb4ab4'},
+                                  {'number': '14', 'value': '0x0'},
+                                  {'number': '15', 'value': '0x3ffb4a7c'},
+                                  {'number': '16', 'value': '0x0'},
+                                  {'number': '17', 'value': '0x80082758'},
+                                  {'number': '18', 'value': '0x3ffb4800'},
+                                  {'number': '19', 'value': '0x3ffb4850'},
+                                  {'number': '20', 'value': '0x4'},
+                                  {'number': '21', 'value': '0x19'},
+                                  {'number': '22', 'value': '0x80'},
+                                  {'number': '23', 'value': '0xffffffe7'},
+                                  {'number': '24', 'value': '0x19'},
+                                  {'number': '25', 'value': '0x80087b68'},
+                                  {'number': '26', 'value': '0x3ffb4c50'},
+                                  {'number': '27', 'value': '0x3f4028a0'},
+                                  {'number': '28', 'value': '0x1'},
+                                  {'number': '29', 'value': '0x0'},
+                                  {'number': '30', 'value': '0x0'},
+                                  {'number': '31', 'value': '0x1'},
+                                  {'number': '32', 'value': '0x0'},
+                                  {'number': '33', 'value': '0x800e2f7f'},
+                                  {'number': '34', 'value': '0x3ffb4c30'},
+                                  {'number': '35', 'value': '0x3'},
+                                  {'number': '36', 'value': '0x3f4028a0'},
+                                  {'number': '37', 'value': '0x3f402920'},
+                                  {'number': '38', 'value': '0x930'},
+                                  {'number': '39', 'value': '0x3f4028a0'},
+                                  {'number': '40', 'value': '0x0'},
+                                  {'number': '41', 'value': '0x8008a624'},
+                                  {'number': '42', 'value': '0x3ffb4bd0'},
+                                  {'number': '43', 'value': '0x400dbf50'},
+                                  {'number': '44', 'value': '0x3f4028a0'},
+                                  {'number': '45', 'value': '0x3f402920'},
+                                  {'number': '46', 'value': '0x3ffb4c30'},
+                                  {'number': '47', 'value': '0x3ffb4c10'},
+                                  {'number': '48', 'value': '0xc'},
+                                  {'number': '49', 'value': '0x800e3714'},
+                                  {'number': '50', 'value': '0x3ffb4ba0'},
+                                  {'number': '51', 'value': '0x32'},
+                                  {'number': '52', 'value': '0x3ffafbfc'},
+                                  {'number': '53', 'value': '0x3ffb4c10'},
+                                  {'number': '54', 'value': '0xc'},
+                                  {'number': '55', 'value': '0x3ffb2934'},
+                                  {'number': '56', 'value': '0xb33fffff'},
+                                  {'number': '57', 'value': '0x800dbf80'},
+                                  {'number': '58', 'value': '0x3ffb4880'},
+                                  {'number': '59', 'value': '0x32'},
+                                  {'number': '60', 'value': '0xffffffff'},
+                                  {'number': '61', 'value': '0x32'},
+                                  {'number': '62', 'value': '0x3ffb4a90'},
+                                  {'number': '63', 'value': '0x3ffb4890'},
+                                  {'number': '64', 'value': '0x2'},
+                                  {'number': '65', 'value': '0x400014fd'},
+                                  {'number': '66', 'value': '0x4000150d'},
+                                  {'number': '67', 'value': '0xfffffffd'},
+                                  {'number': '68', 'value': '0x4'},
+                                  {'number': '69', 'value': '0x8'},
+                                  {'number': '70', 'value': '0x140'},
+                                  {'number': '71', 'value': '0xc2bcfffe'},
+                                  {'number': '72', 'value': '0x1cc5fe96'},
+                                  {'number': '73', 'value': '0x60820'},
+                                  {'number': '74', 'value': '0x3ffabd20'},
+                                  {'number': '75', 'value': '0x0'},
+                                  {'number': '76', 'value': '0xb33fffff'},
+                                  {'number': '77', 'value': '0x0'},
+                                  {'number': '78', 'value': '0x0'},
+                                  {'number': '79', 'value': '0x0'},
+                                  {'number': '80', 'value': '0x0'},
+                                  {'number': '81', 'value': '0x0'},
+                                  {'number': '82', 'value': '0x0'},
+                                  {'number': '83', 'value': '0x0'},
+                                  {'number': '84', 'value': '0x0'},
+                                  {'number': '85', 'value': '0x0'},
+                                  {'number': '86', 'value': '0x0'},
+                                  {'number': '87', 'value': '0x0'},
+                                  {'number': '88', 'value': '0x0'},
+                                  {'number': '89', 'value': '0x0'},
+                                  {'number': '90', 'value': '0x0'},
+                                  {'number': '91', 'value': '0x0'},
+                                  {'number': '92', 'value': '0x0'},
+                                  {'number': '93', 'value': '0x0'},
+                                  {'number': '94', 'value': '0x0'},
+                                  {'number': '95', 'value': '0x0'},
+                                  {'number': '96', 'value': '0x0'},
+                                  {'number': '97', 'value': '0x0'},
+                                  {'number': '98', 'value': '0x0'},
+                                  {'number': '99', 'value': '0x0'},
+                                  {'number': '100', 'value': '0x0'},
+                                  {'number': '101', 'value': '0x0'},
+                                  {'number': '102', 'value': '0x0'},
+                                  {'number': '103', 'value': '0x0'},
+                                  {'number': '104', 'value': '0x0'},
+                                  {'number': '105', 'value': '0x0'},
+                                  {'number': '106', 'value': '0x0'},
+                                  {'number': '107', 'value': '0x0'},
+                                  {'number': '108', 'value': '0x15'},
+                                  {'number': '109', 'value': '0x0'},
+                                  {'number': '110', 'value': '0x0'},
+                                  {'number': '111', 'value': '0x0'},
+                                  {'number': '112', 'value': '0x0'},
+                                  {'number': '113', 'value': '0x0'},
+                                  {'number': '114', 'value': '0x0'},
+                                  {'number': '115', 'value': '0x0'},
+                                  {'number': '116', 'value': '0x4008a624'},
+                                  {'number': '117', 'value': '0x0'},
+                                  {'number': '118', 'value': '0x0'},
+                                  {'number': '119', 'value': '0x0'},
+                                  {'number': '120', 'value': '0x0'},
+                                  {'number': '121', 'value': '0x0'},
+                                  {'number': '122', 'value': '0x0'},
+                                  {'number': '123', 'value': '0x0'},
+                                  {'number': '124', 'value': '0x0'},
+                                  {'number': '125', 'value': '0x0'},
+                                  {'number': '126', 'value': '0x0'},
+                                  {'number': '127', 'value': '0x0'},
+                                  {'number': '128', 'value': '0x0'},
+                                  {'number': '129', 'value': '0x0'},
+                                  {'number': '130', 'value': '0x3ffb4aa0'},
+                                  {'number': '131', 'value': '0x40000954'},
+                                  {'number': '132', 'value': '0x40000a28'},
+                                  {'number': '133', 'value': '0x40000af8'},
+                                  {'number': '134', 'value': '0x40000c68'},
+                                  {'number': '135', 'value': '0x0'},
+                                  {'number': '136', 'value': '0x0'},
+                                  {'number': '137', 'value': '0x0'},
+                                  {'number': '138', 'value': '0x0'},
+                                  {'number': '139', 'value': '0x0'},
+                                  {'number': '140', 'value': '0x0'},
+                                  {'number': '141', 'value': '0x1300124c'},
+                                  {'number': '142', 'value': '0x40080000'},
+                                  {'number': '143', 'value': '0x4'},
+                                  {'number': '144', 'value': '0x0'},
+                                  {'number': '145', 'value': '0x163e1120'},
+                                  {'number': '146', 'value': '0xcdcd'},
+                                  {'number': '147', 'value': '0x0'},
+                                  {'number': '148', 'value': '0x0'},
+                                  {'number': '149', 'value': '0x0'},
+                                  {'number': '150', 'value': '0x1654f330'},
+                                  {'number': '151', 'value': '0x0'},
+                                  {'number': '152', 'value': '0x0'},
+                                  {'number': '153', 'value': '0x0'},
+                                  {'number': '154', 'value': '0x0'},
+                                  {'number': '155', 'value': '0x0'},
+                                  {'number': '156', 'value': '0x0'},
+                                  {'number': '157', 'value': '0x800e2f7f'},
+                                  {'number': '158', 'value': '0x3ffb4c30'},
+                                  {'number': '159', 'value': '0x3'},
+                                  {'number': '160', 'value': '0x3f4028a0'},
+                                  {'number': '161', 'value': '0x3f402920'},
+                                  {'number': '162', 'value': '0x930'},
+                                  {'number': '163', 'value': '0x3f4028a0'},
+                                  {'number': '164', 'value': '0x0'},
+                                  {'number': '165', 'value': '0x8008a624'},
+                                  {'number': '166', 'value': '0x3ffb4bd0'},
+                                  {'number': '167', 'value': '0x400dbf50'},
+                                  {'number': '168', 'value': '0x3f4028a0'},
+                                  {'number': '169', 'value': '0x3f402920'},
+                                  {'number': '170', 'value': '0x3ffb4c30'},
+                                  {'number': '171', 'value': '0x3ffb4c10'},
+                                  {'number': '172', 'value': '0xc'},
+                                  {'number': '173', 'value': '0x0'},
+                                  {'number': '174', 'value': '0x0'},
+                                  {'number': '175', 'value': '0x0'},
+                                  {'number': '176', 'value': '0x0'},
+                                  {'number': '177', 'value': '0x0'},
+                                  {'number': '178', 'value': '0x0'},
+                                  {'number': '179', 'value': '0x0'},
+                                  {'number': '180', 'value': '0x0'},
+                                  {'number': '181', 'value': '0x0'},
+                                  {'number': '182', 'value': '0x0'},
+                                  {'number': '183', 'value': '0x0'},
+                                  {'number': '184', 'value': '0x0'},
+                                  {'number': '185', 'value': '0x0'},
+                                  {'number': '186', 'value': '0x0'},
+                                  {'number': '187', 'value': '0x0'},
+                                  {'number': '188', 'value': '0x0'},
+                                  {'number': '189', 'value': '0x0'},
+                                  {'number': '190', 'value': '0x1'},
+                                  {'number': '191', 'value': '0x1'},
+                                  {'number': '192', 'value': '0x0'},
+                                  {'number': '193', 'value': '0x2'},
+                                  {'number': '194', 'value': '0x8'},
+                                  {'number': '195', 'value': '0x0'},
+                                  {'number': '196', 'value': '0x0'},
+                                  {'number': '197', 'value': '0x0'},
+                                  {'number': '198', 'value': '0x0'},
+                                  {'number': '199', 'value': '0x0'},
+                                  {'number': '200', 'value': '0x0'},
+                                  {'number': '201', 'value': '0x0'},
+                                  {'number': '202', 'value': '0x0'},
+                                  {'number': '203', 'value': '0x0'},
+                                  {'number': '204', 'value': '0x0'},
+                                  {'number': '205', 'value': '0x0'},
+                                  {'number': '206', 'value': '0x0'},
+                                  {'number': '207', 'value': '0x0'},
+                                  {'number': '208', 'value': '0x0'},
+                                  {'number': '209', 'value': '0x0'},
+                                  {'number': '210', 'value': '0x0'},
+                                  {'number': '211', 'value': '0x0'}]},
+  'stream': 'stdout',
+  'token': None,
+  'type': 'result'}]
+2023-05-29 13:39:12,624 - Gdb - DEBUG - RESULT: done {'register-values': [{'number': '0', 'value': '0x400d50bb'},
+                     {'number': '1', 'value': '0x800dbe5e'},
+                     {'number': '2', 'value': '0x3ffaeb44'},
+                     {'number': '3', 'value': '0x0'},
+                     {'number': '4', 'value': '0x3ffb4ad4'},
+                     {'number': '5', 'value': '0x3ffb4ab4'},
+                     {'number': '6', 'value': '0x10'},
+                     {'number': '7', 'value': '0xff0000'},
+                     {'number': '8', 'value': '0xff000000'},
+                     {'number': '9', 'value': '0x800827a5'},
+                     {'number': '10', 'value': '0x3ffb4830'},
+                     {'number': '11', 'value': '0x3ffb4850'},
+                     {'number': '12', 'value': '0x19'},
+                     {'number': '13', 'value': '0x3ffb4ab4'},
+                     {'number': '14', 'value': '0x0'},
+                     {'number': '15', 'value': '0x3ffb4a7c'},
+                     {'number': '16', 'value': '0x0'},
+                     {'number': '17', 'value': '0x80082758'},
+                     {'number': '18', 'value': '0x3ffb4800'},
+                     {'number': '19', 'value': '0x3ffb4850'},
+                     {'number': '20', 'value': '0x4'},
+                     {'number': '21', 'value': '0x19'},
+                     {'number': '22', 'value': '0x80'},
+                     {'number': '23', 'value': '0xffffffe7'},
+                     {'number': '24', 'value': '0x19'},
+                     {'number': '25', 'value': '0x80087b68'},
+                     {'number': '26', 'value': '0x3ffb4c50'},
+                     {'number': '27', 'value': '0x3f4028a0'},
+                     {'number': '28', 'value': '0x1'},
+                     {'number': '29', 'value': '0x0'},
+                     {'number': '30', 'value': '0x0'},
+                     {'number': '31', 'value': '0x1'},
+                     {'number': '32', 'value': '0x0'},
+                     {'number': '33', 'value': '0x800e2f7f'},
+                     {'number': '34', 'value': '0x3ffb4c30'},
+                     {'number': '35', 'value': '0x3'},
+                     {'number': '36', 'value': '0x3f4028a0'},
+                     {'number': '37', 'value': '0x3f402920'},
+                     {'number': '38', 'value': '0x930'},
+                     {'number': '39', 'value': '0x3f4028a0'},
+                     {'number': '40', 'value': '0x0'},
+                     {'number': '41', 'value': '0x8008a624'},
+                     {'number': '42', 'value': '0x3ffb4bd0'},
+                     {'number': '43', 'value': '0x400dbf50'},
+                     {'number': '44', 'value': '0x3f4028a0'},
+                     {'number': '45', 'value': '0x3f402920'},
+                     {'number': '46', 'value': '0x3ffb4c30'},
+                     {'number': '47', 'value': '0x3ffb4c10'},
+                     {'number': '48', 'value': '0xc'},
+                     {'number': '49', 'value': '0x800e3714'},
+                     {'number': '50', 'value': '0x3ffb4ba0'},
+                     {'number': '51', 'value': '0x32'},
+                     {'number': '52', 'value': '0x3ffafbfc'},
+                     {'number': '53', 'value': '0x3ffb4c10'},
+                     {'number': '54', 'value': '0xc'},
+                     {'number': '55', 'value': '0x3ffb2934'},
+                     {'number': '56', 'value': '0xb33fffff'},
+                     {'number': '57', 'value': '0x800dbf80'},
+                     {'number': '58', 'value': '0x3ffb4880'},
+                     {'number': '59', 'value': '0x32'},
+                     {'number': '60', 'value': '0xffffffff'},
+                     {'number': '61', 'value': '0x32'},
+                     {'number': '62', 'value': '0x3ffb4a90'},
+                     {'number': '63', 'value': '0x3ffb4890'},
+                     {'number': '64', 'value': '0x2'},
+                     {'number': '65', 'value': '0x400014fd'},
+                     {'number': '66', 'value': '0x4000150d'},
+                     {'number': '67', 'value': '0xfffffffd'},
+                     {'number': '68', 'value': '0x4'},
+                     {'number': '69', 'value': '0x8'},
+                     {'number': '70', 'value': '0x140'},
+                     {'number': '71', 'value': '0xc2bcfffe'},
+                     {'number': '72', 'value': '0x1cc5fe96'},
+                     {'number': '73', 'value': '0x60820'},
+                     {'number': '74', 'value': '0x3ffabd20'},
+                     {'number': '75', 'value': '0x0'},
+                     {'number': '76', 'value': '0xb33fffff'},
+                     {'number': '77', 'value': '0x0'},
+                     {'number': '78', 'value': '0x0'},
+                     {'number': '79', 'value': '0x0'},
+                     {'number': '80', 'value': '0x0'},
+                     {'number': '81', 'value': '0x0'},
+                     {'number': '82', 'value': '0x0'},
+                     {'number': '83', 'value': '0x0'},
+                     {'number': '84', 'value': '0x0'},
+                     {'number': '85', 'value': '0x0'},
+                     {'number': '86', 'value': '0x0'},
+                     {'number': '87', 'value': '0x0'},
+                     {'number': '88', 'value': '0x0'},
+                     {'number': '89', 'value': '0x0'},
+                     {'number': '90', 'value': '0x0'},
+                     {'number': '91', 'value': '0x0'},
+                     {'number': '92', 'value': '0x0'},
+                     {'number': '93', 'value': '0x0'},
+                     {'number': '94', 'value': '0x0'},
+                     {'number': '95', 'value': '0x0'},
+                     {'number': '96', 'value': '0x0'},
+                     {'number': '97', 'value': '0x0'},
+                     {'number': '98', 'value': '0x0'},
+                     {'number': '99', 'value': '0x0'},
+                     {'number': '100', 'value': '0x0'},
+                     {'number': '101', 'value': '0x0'},
+                     {'number': '102', 'value': '0x0'},
+                     {'number': '103', 'value': '0x0'},
+                     {'number': '104', 'value': '0x0'},
+                     {'number': '105', 'value': '0x0'},
+                     {'number': '106', 'value': '0x0'},
+                     {'number': '107', 'value': '0x0'},
+                     {'number': '108', 'value': '0x15'},
+                     {'number': '109', 'value': '0x0'},
+                     {'number': '110', 'value': '0x0'},
+                     {'number': '111', 'value': '0x0'},
+                     {'number': '112', 'value': '0x0'},
+                     {'number': '113', 'value': '0x0'},
+                     {'number': '114', 'value': '0x0'},
+                     {'number': '115', 'value': '0x0'},
+                     {'number': '116', 'value': '0x4008a624'},
+                     {'number': '117', 'value': '0x0'},
+                     {'number': '118', 'value': '0x0'},
+                     {'number': '119', 'value': '0x0'},
+                     {'number': '120', 'value': '0x0'},
+                     {'number': '121', 'value': '0x0'},
+                     {'number': '122', 'value': '0x0'},
+                     {'number': '123', 'value': '0x0'},
+                     {'number': '124', 'value': '0x0'},
+                     {'number': '125', 'value': '0x0'},
+                     {'number': '126', 'value': '0x0'},
+                     {'number': '127', 'value': '0x0'},
+                     {'number': '128', 'value': '0x0'},
+                     {'number': '129', 'value': '0x0'},
+                     {'number': '130', 'value': '0x3ffb4aa0'},
+                     {'number': '131', 'value': '0x40000954'},
+                     {'number': '132', 'value': '0x40000a28'},
+                     {'number': '133', 'value': '0x40000af8'},
+                     {'number': '134', 'value': '0x40000c68'},
+                     {'number': '135', 'value': '0x0'},
+                     {'number': '136', 'value': '0x0'},
+                     {'number': '137', 'value': '0x0'},
+                     {'number': '138', 'value': '0x0'},
+                     {'number': '139', 'value': '0x0'},
+                     {'number': '140', 'value': '0x0'},
+                     {'number': '141', 'value': '0x1300124c'},
+                     {'number': '142', 'value': '0x40080000'},
+                     {'number': '143', 'value': '0x4'},
+                     {'number': '144', 'value': '0x0'},
+                     {'number': '145', 'value': '0x163e1120'},
+                     {'number': '146', 'value': '0xcdcd'},
+                     {'number': '147', 'value': '0x0'},
+                     {'number': '148', 'value': '0x0'},
+                     {'number': '149', 'value': '0x0'},
+                     {'number': '150', 'value': '0x1654f330'},
+                     {'number': '151', 'value': '0x0'},
+                     {'number': '152', 'value': '0x0'},
+                     {'number': '153', 'value': '0x0'},
+                     {'number': '154', 'value': '0x0'},
+                     {'number': '155', 'value': '0x0'},
+                     {'number': '156', 'value': '0x0'},
+                     {'number': '157', 'value': '0x800e2f7f'},
+                     {'number': '158', 'value': '0x3ffb4c30'},
+                     {'number': '159', 'value': '0x3'},
+                     {'number': '160', 'value': '0x3f4028a0'},
+                     {'number': '161', 'value': '0x3f402920'},
+                     {'number': '162', 'value': '0x930'},
+                     {'number': '163', 'value': '0x3f4028a0'},
+                     {'number': '164', 'value': '0x0'},
+                     {'number': '165', 'value': '0x8008a624'},
+                     {'number': '166', 'value': '0x3ffb4bd0'},
+                     {'number': '167', 'value': '0x400dbf50'},
+                     {'number': '168', 'value': '0x3f4028a0'},
+                     {'number': '169', 'value': '0x3f402920'},
+                     {'number': '170', 'value': '0x3ffb4c30'},
+                     {'number': '171', 'value': '0x3ffb4c10'},
+                     {'number': '172', 'value': '0xc'},
+                     {'number': '173', 'value': '0x0'},
+                     {'number': '174', 'value': '0x0'},
+                     {'number': '175', 'value': '0x0'},
+                     {'number': '176', 'value': '0x0'},
+                     {'number': '177', 'value': '0x0'},
+                     {'number': '178', 'value': '0x0'},
+                     {'number': '179', 'value': '0x0'},
+                     {'number': '180', 'value': '0x0'},
+                     {'number': '181', 'value': '0x0'},
+                     {'number': '182', 'value': '0x0'},
+                     {'number': '183', 'value': '0x0'},
+                     {'number': '184', 'value': '0x0'},
+                     {'number': '185', 'value': '0x0'},
+                     {'number': '186', 'value': '0x0'},
+                     {'number': '187', 'value': '0x0'},
+                     {'number': '188', 'value': '0x0'},
+                     {'number': '189', 'value': '0x0'},
+                     {'number': '190', 'value': '0x1'},
+                     {'number': '191', 'value': '0x1'},
+                     {'number': '192', 'value': '0x0'},
+                     {'number': '193', 'value': '0x2'},
+                     {'number': '194', 'value': '0x8'},
+                     {'number': '195', 'value': '0x0'},
+                     {'number': '196', 'value': '0x0'},
+                     {'number': '197', 'value': '0x0'},
+                     {'number': '198', 'value': '0x0'},
+                     {'number': '199', 'value': '0x0'},
+                     {'number': '200', 'value': '0x0'},
+                     {'number': '201', 'value': '0x0'},
+                     {'number': '202', 'value': '0x0'},
+                     {'number': '203', 'value': '0x0'},
+                     {'number': '204', 'value': '0x0'},
+                     {'number': '205', 'value': '0x0'},
+                     {'number': '206', 'value': '0x0'},
+                     {'number': '207', 'value': '0x0'},
+                     {'number': '208', 'value': '0x0'},
+                     {'number': '209', 'value': '0x0'},
+                     {'number': '210', 'value': '0x0'},
+                     {'number': '211', 'value': '0x0'}]}
+2023-05-29 13:39:12,625 - Debug Adapter(Command Processor) - DEBUG - Processed command: variables
+2023-05-29 13:39:12,625 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "response", "request_seq": 11, "success": true, "command": "variables", "body": {"variables": [{"name": "pc", "value": "0x400d50bb", "variablesReference": 0, "presentationHint": {}}, {"name": "ar0", "value": "0x800dbe5e", "variablesReference": 0, "presentationHint": {}}, {"name": "ar1", "value": "0x3ffaeb44", "variablesReference": 0, "presentationHint": {}}, {"name": "ar2", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "ar3", "value": "0x3ffb4ad4", "variablesReference": 0, "presentationHint": {}}, {"name": "ar4", "value": "0x3ffb4ab4", "variablesReference": 0, "presentationHint": {}}, {"name": "ar5", "value": "0x10", "variablesReference": 0, "presentationHint": {}}, {"name": "ar6", "value": "0xff0000", "variablesReference": 0, "presentationHint": {}}, {"name": "ar7", "value": "0xff000000", "variablesReference": 0, "presentationHint": {}}, {"name": "ar8", "value": "0x800827a5", "variablesReference": 0, "presentationHint": {}}, {"name": "ar9", "value": "0x3ffb4830", "variablesReference": 0, "presentationHint": {}}, {"name": "ar10", "value": "0x3ffb4850", "variablesReference": 0, "presentationHint": {}}, {"name": "ar11", "value": "0x19", "variablesReference": 0, "presentationHint": {}}, {"name": "ar12", "value": "0x3ffb4ab4", "variablesReference": 0, "presentationHint": {}}, {"name": "ar13", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "ar14", "value": "0x3ffb4a7c", "variablesReference": 0, "presentationHint": {}}, {"name": "ar15", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "ar16", "value": "0x80082758", "variablesReference": 0, "presentationHint": {}}, {"name": "ar17", "value": "0x3ffb4800", "variablesReference": 0, "presentationHint": {}}, {"name": "ar18", "value": "0x3ffb4850", "variablesReference": 0, "presentationHint": {}}, {"name": "ar19", "value": "0x4", "variablesReference": 0, "presentationHint": {}}, {"name": "ar20", "value": "0x19", "variablesReference": 0, "presentationHint": {}}, {"name": "ar21", "value": "0x80", "variablesReference": 0, "presentationHint": {}}, {"name": "ar22", "value": "0xffffffe7", "variablesReference": 0, "presentationHint": {}}, {"name": "ar23", "value": "0x19", "variablesReference": 0, "presentationHint": {}}, {"name": "ar24", "value": "0x80087b68", "variablesReference": 0, "presentationHint": {}}, {"name": "ar25", "value": "0x3ffb4c50", "variablesReference": 0, "presentationHint": {}}, {"name": "ar26", "value": "0x3f4028a0", "variablesReference": 0, "presentationHint": {}}, {"name": "ar27", "value": "0x1", "variablesReference": 0, "presentationHint": {}}, {"name": "ar28", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "ar29", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "ar30", "value": "0x1", "variablesReference": 0, "presentationHint": {}}, {"name": "ar31", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "ar32", "value": "0x800e2f7f", "variablesReference": 0, "presentationHint": {}}, {"name": "ar33", "value": "0x3ffb4c30", "variablesReference": 0, "presentationHint": {}}, {"name": "ar34", "value": "0x3", "variablesReference": 0, "presentationHint": {}}, {"name": "ar35", "value": "0x3f4028a0", "variablesReference": 0, "presentationHint": {}}, {"name": "ar36", "value": "0x3f402920", "variablesReference": 0, "presentationHint": {}}, {"name": "ar37", "value": "0x930", "variablesReference": 0, "presentationHint": {}}, {"name": "ar38", "value": "0x3f4028a0", "variablesReference": 0, "presentationHint": {}}, {"name": "ar39", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "ar40", "value": "0x8008a624", "variablesReference": 0, "presentationHint": {}}, {"name": "ar41", "value": "0x3ffb4bd0", "variablesReference": 0, "presentationHint": {}}, {"name": "ar42", "value": "0x400dbf50", "variablesReference": 0, "presentationHint": {}}, {"name": "ar43", "value": "0x3f4028a0", "variablesReference": 0, "presentationHint": {}}, {"name": "ar44", "value": "0x3f402920", "variablesReference": 0, "presentationHint": {}}, {"name": "ar45", "value": "0x3ffb4c30", "variablesReference": 0, "presentationHint": {}}, {"name": "ar46", "value": "0x3ffb4c10", "variablesReference": 0, "presentationHint": {}}, {"name": "ar47", "value": "0xc", "variablesReference": 0, "presentationHint": {}}, {"name": "ar48", "value": "0x800e3714", "variablesReference": 0, "presentationHint": {}}, {"name": "ar49", "value": "0x3ffb4ba0", "variablesReference": 0, "presentationHint": {}}, {"name": "ar50", "value": "0x32", "variablesReference": 0, "presentationHint": {}}, {"name": "ar51", "value": "0x3ffafbfc", "variablesReference": 0, "presentationHint": {}}, {"name": "ar52", "value": "0x3ffb4c10", "variablesReference": 0, "presentationHint": {}}, {"name": "ar53", "value": "0xc", "variablesReference": 0, "presentationHint": {}}, {"name": "ar54", "value": "0x3ffb2934", "variablesReference": 0, "presentationHint": {}}, {"name": "ar55", "value": "0xb33fffff", "variablesReference": 0, "presentationHint": {}}, {"name": "ar56", "value": "0x800dbf80", "variablesReference": 0, "presentationHint": {}}, {"name": "ar57", "value": "0x3ffb4880", "variablesReference": 0, "presentationHint": {}}, {"name": "ar58", "value": "0x32", "variablesReference": 0, "presentationHint": {}}, {"name": "ar59", "value": "0xffffffff", "variablesReference": 0, "presentationHint": {}}, {"name": "ar60", "value": "0x32", "variablesReference": 0, "presentationHint": {}}, {"name": "ar61", "value": "0x3ffb4a90", "variablesReference": 0, "presentationHint": {}}, {"name": "ar62", "value": "0x3ffb4890", "variablesReference": 0, "presentationHint": {}}, {"name": "ar63", "value": "0x2", "variablesReference": 0, "presentationHint": {}}, {"name": "lbeg", "value": "0x400014fd", "variablesReference": 0, "presentationHint": {}}, {"name": "lend", "value": "0x4000150d", "variablesReference": 0, "presentationHint": {}}, {"name": "lcount", "value": "0xfffffffd", "variablesReference": 0, "presentationHint": {}}, {"name": "sar", "value": "0x4", "variablesReference": 0, "presentationHint": {}}, {"name": "windowbase", "value": "0x8", "variablesReference": 0, "presentationHint": {}}, {"name": "windowstart", "value": "0x140", "variablesReference": 0, "presentationHint": {}}, {"name": "configid0", "value": "0xc2bcfffe", "variablesReference": 0, "presentationHint": {}}, {"name": "configid1", "value": "0x1cc5fe96", "variablesReference": 0, "presentationHint": {}}, {"name": "ps", "value": "0x60820", "variablesReference": 0, "presentationHint": {}}, {"name": "threadptr", "value": "0x3ffabd20", "variablesReference": 0, "presentationHint": {}}, {"name": "br", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "scompare1", "value": "0xb33fffff", "variablesReference": 0, "presentationHint": {}}, {"name": "acclo", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "acchi", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "m0", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "m1", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "m2", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "m3", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "expstate", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "f64r_lo", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "f64r_hi", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "f64s", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "f0", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "f1", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "f2", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "f3", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "f4", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "f5", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "f6", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "f7", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "f8", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "f9", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "f10", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "f11", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "f12", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "f13", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "f14", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "f15", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "fcr", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "fsr", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "mmid", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "ibreakenable", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "memctl", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "atomctl", "value": "0x15", "variablesReference": 0, "presentationHint": {}}, {"name": "ddr", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "ibreaka0", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "ibreaka1", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "dbreaka0", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "dbreaka1", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "dbreakc0", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "dbreakc1", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "epc1", "value": "0x4008a624", "variablesReference": 0, "presentationHint": {}}, {"name": "epc2", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "epc3", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "epc4", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "epc5", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "epc6", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "epc7", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "depc", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "eps2", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "eps3", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "eps4", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "eps5", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "eps6", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "eps7", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "excsave1", "value": "0x3ffb4aa0", "variablesReference": 0, "presentationHint": {}}, {"name": "excsave2", "value": "0x40000954", "variablesReference": 0, "presentationHint": {}}, {"name": "excsave3", "value": "0x40000a28", "variablesReference": 0, "presentationHint": {}}, {"name": "excsave4", "value": "0x40000af8", "variablesReference": 0, "presentationHint": {}}, {"name": "excsave5", "value": "0x40000c68", "variablesReference": 0, "presentationHint": {}}, {"name": "excsave6", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "excsave7", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "cpenable", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "interrupt", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "intset", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "intclear", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "intenable", "value": "0x1300124c", "variablesReference": 0, "presentationHint": {}}, {"name": "vecbase", "value": "0x40080000", "variablesReference": 0, "presentationHint": {}}, {"name": "exccause", "value": "0x4", "variablesReference": 0, "presentationHint": {}}, {"name": "debugcause", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "ccount", "value": "0x163e1120", "variablesReference": 0, "presentationHint": {}}, {"name": "prid", "value": "0xcdcd", "variablesReference": 0, "presentationHint": {}}, {"name": "icount", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "icountlevel", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "excvaddr", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "ccompare0", "value": "0x1654f330", "variablesReference": 0, "presentationHint": {}}, {"name": "ccompare1", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "ccompare2", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "misc0", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "misc1", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "misc2", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "misc3", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "a0", "value": "0x800e2f7f", "variablesReference": 0, "presentationHint": {}}, {"name": "a1", "value": "0x3ffb4c30", "variablesReference": 0, "presentationHint": {}}, {"name": "a2", "value": "0x3", "variablesReference": 0, "presentationHint": {}}, {"name": "a3", "value": "0x3f4028a0", "variablesReference": 0, "presentationHint": {}}, {"name": "a4", "value": "0x3f402920", "variablesReference": 0, "presentationHint": {}}, {"name": "a5", "value": "0x930", "variablesReference": 0, "presentationHint": {}}, {"name": "a6", "value": "0x3f4028a0", "variablesReference": 0, "presentationHint": {}}, {"name": "a7", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "a8", "value": "0x8008a624", "variablesReference": 0, "presentationHint": {}}, {"name": "a9", "value": "0x3ffb4bd0", "variablesReference": 0, "presentationHint": {}}, {"name": "a10", "value": "0x400dbf50", "variablesReference": 0, "presentationHint": {}}, {"name": "a11", "value": "0x3f4028a0", "variablesReference": 0, "presentationHint": {}}, {"name": "a12", "value": "0x3f402920", "variablesReference": 0, "presentationHint": {}}, {"name": "a13", "value": "0x3ffb4c30", "variablesReference": 0, "presentationHint": {}}, {"name": "a14", "value": "0x3ffb4c10", "variablesReference": 0, "presentationHint": {}}, {"name": "a15", "value": "0xc", "variablesReference": 0, "presentationHint": {}}, {"name": "b0", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "b1", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "b2", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "b3", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "b4", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "b5", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "b6", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "b7", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "b8", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "b9", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "b10", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "b11", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "b12", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "b13", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "b14", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "b15", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "psintlevel", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "psum", "value": "0x1", "variablesReference": 0, "presentationHint": {}}, {"name": "pswoe", "value": "0x1", "variablesReference": 0, "presentationHint": {}}, {"name": "psexcm", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "pscallinc", "value": "0x2", "variablesReference": 0, "presentationHint": {}}, {"name": "psowb", "value": "0x8", "variablesReference": 0, "presentationHint": {}}, {"name": "acc", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "dbnum", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "f64r", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "roundmode", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "invalidenable", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "divzeroenable", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "overflowenable", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "underflowenable", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "inexactenable", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "invalidflag", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "divzeroflag", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "overflowflag", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "underflowflag", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "inexactflag", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "fpreserved20", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "fpreserved20a", "value": "0x0", "variablesReference": 0, "presentationHint": {}}, {"name": "fpreserved5", "value": "0x0", "variablesReference": 0, "presentationHint": {}}]}, "seq": 41}
+
+2023-05-29 13:39:12,626 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Processed command: variables\n", "source": {}}, "seq": 42}
+
+2023-05-29 13:39:13,762 - Debug Adapter (ReaderThread) - DEBUG - read line: >>b'Content-Length: 75\\r\\n'<<
+
+2023-05-29 13:39:13,762 - Debug Adapter (ReaderThread) - DEBUG - read line: >>b'\\r\\n'<<
+
+2023-05-29 13:39:13,763 - Debug Adapter(Command Processor) - DEBUG - Got json: {
+    "arguments": {
+        "threadId": 1
+    },
+    "command": "continue",
+    "seq": 12,
+    "type": "request"
+}
+2023-05-29 13:39:13,763 - Gdb - DEBUG - MI->: -exec-continue --all
+2023-05-29 13:39:13,763 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Got json: {\n    \"arguments\": {\n        \"threadId\": 1\n    },\n    \"command\": \"continue\",\n    \"seq\": 12,\n    \"type\": \"request\"\n}\n", "source": {}}, "seq": 43}
+
+2023-05-29 13:39:13,765 - Gdb - DEBUG - MI<-:
+[{'message': 'running',
+  'payload': None,
+  'stream': 'stdout',
+  'token': None,
+  'type': 'result'},
+ {'message': 'running',
+  'payload': {'thread-id': 'all'},
+  'stream': 'stdout',
+  'token': None,
+  'type': 'notify'}]
+2023-05-29 13:39:13,765 - Gdb - DEBUG - RESULT: running None
+2023-05-29 13:39:14,266 - Gdb - INFO - NOTIFY: running {'thread-id': 'all'}
+2023-05-29 13:39:14,266 - Gdb - DEBUG - new target state 2
+2023-05-29 13:39:14,267 - Debug Adapter(Command Processor) - DEBUG - Processed command: continue
+2023-05-29 13:39:14,268 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "response", "request_seq": 12, "success": true, "command": "continue", "body": {"allThreadsContinued": true}, "seq": 44}
+
+2023-05-29 13:39:14,268 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Processed command: continue\n", "source": {}}, "seq": 45}
+
+2023-05-29 13:39:14,367 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:14,368 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 46}
+
+2023-05-29 13:39:14,869 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:14,869 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 47}
+
+2023-05-29 13:39:14,971 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:14,971 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 48}
+
+2023-05-29 13:39:15,473 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:15,473 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 49}
+
+2023-05-29 13:39:15,574 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:15,575 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 50}
+
+2023-05-29 13:39:16,076 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:16,076 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 51}
+
+2023-05-29 13:39:16,178 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:16,178 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 52}
+
+2023-05-29 13:39:16,680 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:16,680 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 53}
+
+2023-05-29 13:39:16,781 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:16,782 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 54}
+
+2023-05-29 13:39:17,283 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:17,284 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 55}
+
+2023-05-29 13:39:17,384 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:17,384 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 56}
+
+2023-05-29 13:39:17,886 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:17,886 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 57}
+
+2023-05-29 13:39:17,987 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:17,988 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 58}
+
+2023-05-29 13:39:18,489 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:18,489 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 59}
+
+2023-05-29 13:39:18,590 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:18,591 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 60}
+
+2023-05-29 13:39:19,092 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:19,092 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 61}
+
+2023-05-29 13:39:19,193 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:19,194 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 62}
+
+2023-05-29 13:39:19,694 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:19,695 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 63}
+
+2023-05-29 13:39:19,796 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:19,797 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 64}
+
+2023-05-29 13:39:20,298 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:20,298 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 65}
+
+2023-05-29 13:39:20,400 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:20,400 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 66}
+
+2023-05-29 13:39:20,902 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:20,902 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 67}
+
+2023-05-29 13:39:21,004 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:21,005 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 68}
+
+2023-05-29 13:39:21,505 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:21,506 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 69}
+
+2023-05-29 13:39:21,607 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:21,607 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 70}
+
+2023-05-29 13:39:22,109 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:22,109 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 71}
+
+2023-05-29 13:39:22,210 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:22,211 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 72}
+
+2023-05-29 13:39:22,712 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:22,713 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 73}
+
+2023-05-29 13:39:22,814 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:22,814 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 74}
+
+2023-05-29 13:39:23,315 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:23,316 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 75}
+
+2023-05-29 13:39:23,417 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:23,417 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 76}
+
+2023-05-29 13:39:23,919 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:23,919 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 77}
+
+2023-05-29 13:39:24,020 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:24,021 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 78}
+
+2023-05-29 13:39:24,522 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:24,522 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 79}
+
+2023-05-29 13:39:24,623 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:24,623 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 80}
+
+2023-05-29 13:39:25,124 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:25,125 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 81}
+
+2023-05-29 13:39:25,225 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:25,225 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 82}
+
+2023-05-29 13:39:25,726 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:25,727 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 83}
+
+2023-05-29 13:39:25,828 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:25,829 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 84}
+
+2023-05-29 13:39:26,331 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:26,332 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 85}
+
+2023-05-29 13:39:26,432 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:26,432 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 86}
+
+2023-05-29 13:39:26,934 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:26,934 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 87}
+
+2023-05-29 13:39:27,036 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:27,037 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 88}
+
+2023-05-29 13:39:27,538 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:27,538 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 89}
+
+2023-05-29 13:39:27,639 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:27,640 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 90}
+
+2023-05-29 13:39:28,141 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:28,142 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 91}
+
+2023-05-29 13:39:28,243 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:28,243 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 92}
+
+2023-05-29 13:39:28,744 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:28,745 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 93}
+
+2023-05-29 13:39:28,846 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:28,846 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 94}
+
+2023-05-29 13:39:29,347 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:29,348 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 95}
+
+2023-05-29 13:39:29,449 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:29,450 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 96}
+
+2023-05-29 13:39:29,951 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:29,952 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 97}
+
+2023-05-29 13:39:30,053 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:30,053 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 98}
+
+2023-05-29 13:39:30,555 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:30,555 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 99}
+
+2023-05-29 13:39:30,656 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:30,657 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 100}
+
+2023-05-29 13:39:31,158 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:31,159 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 101}
+
+2023-05-29 13:39:31,260 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:31,260 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 102}
+
+2023-05-29 13:39:31,762 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:31,762 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 103}
+
+2023-05-29 13:39:31,863 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:31,864 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 104}
+
+2023-05-29 13:39:32,365 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:32,366 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 105}
+
+2023-05-29 13:39:32,467 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:32,467 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 106}
+
+2023-05-29 13:39:32,969 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:32,969 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 107}
+
+2023-05-29 13:39:33,070 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:33,071 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 108}
+
+2023-05-29 13:39:33,572 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:33,573 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 109}
+
+2023-05-29 13:39:33,674 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:33,675 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 110}
+
+2023-05-29 13:39:34,176 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:34,177 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 111}
+
+2023-05-29 13:39:34,278 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:34,279 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 112}
+
+2023-05-29 13:39:34,780 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:34,780 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 113}
+
+2023-05-29 13:39:34,882 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:34,882 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 114}
+
+2023-05-29 13:39:35,384 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:35,384 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 115}
+
+2023-05-29 13:39:35,486 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:35,486 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 116}
+
+2023-05-29 13:39:35,988 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:35,989 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 117}
+
+2023-05-29 13:39:36,090 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:36,091 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 118}
+
+2023-05-29 13:39:36,592 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:36,593 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 119}
+
+2023-05-29 13:39:36,693 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:36,694 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 120}
+
+2023-05-29 13:39:37,195 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:37,195 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 121}
+
+2023-05-29 13:39:37,297 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:37,297 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 122}
+
+2023-05-29 13:39:37,799 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:37,799 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 123}
+
+2023-05-29 13:39:37,901 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:37,901 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 124}
+
+2023-05-29 13:39:38,403 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:38,403 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 125}
+
+2023-05-29 13:39:38,504 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:38,505 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 126}
+
+2023-05-29 13:39:39,006 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:39,006 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 127}
+
+2023-05-29 13:39:39,108 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:39,108 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 128}
+
+2023-05-29 13:39:39,609 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:39,610 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 129}
+
+2023-05-29 13:39:39,711 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:39,712 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 130}
+
+2023-05-29 13:39:40,213 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:40,214 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 131}
+
+2023-05-29 13:39:40,314 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:40,314 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 132}
+
+2023-05-29 13:39:40,815 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:40,816 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 133}
+
+2023-05-29 13:39:40,917 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:40,917 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 134}
+
+2023-05-29 13:39:41,418 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:41,418 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 135}
+
+2023-05-29 13:39:41,519 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:41,520 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 136}
+
+2023-05-29 13:39:42,021 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:42,022 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 137}
+
+2023-05-29 13:39:42,123 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:42,124 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 138}
+
+2023-05-29 13:39:42,625 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:42,625 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 139}
+
+2023-05-29 13:39:42,726 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:42,727 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 140}
+
+2023-05-29 13:39:43,227 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:43,228 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 141}
+
+2023-05-29 13:39:43,328 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:43,329 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 142}
+
+2023-05-29 13:39:43,830 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:43,830 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 143}
+
+2023-05-29 13:39:43,931 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:43,932 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 144}
+
+2023-05-29 13:39:44,432 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:44,433 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 145}
+
+2023-05-29 13:39:44,534 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:44,534 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 146}
+
+2023-05-29 13:39:45,036 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:45,036 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 147}
+
+2023-05-29 13:39:45,137 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:45,138 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 148}
+
+2023-05-29 13:39:45,638 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:45,639 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 149}
+
+2023-05-29 13:39:45,740 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:45,741 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 150}
+
+2023-05-29 13:39:46,242 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:46,244 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 151}
+
+2023-05-29 13:39:46,343 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:46,344 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 152}
+
+2023-05-29 13:39:46,845 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:46,845 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 153}
+
+2023-05-29 13:39:46,946 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:46,947 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 154}
+
+2023-05-29 13:39:47,448 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:47,448 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 155}
+
+2023-05-29 13:39:47,549 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:47,549 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 156}
+
+2023-05-29 13:39:48,050 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:48,051 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 157}
+
+2023-05-29 13:39:48,152 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:48,152 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 158}
+
+2023-05-29 13:39:48,653 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:48,654 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 159}
+
+2023-05-29 13:39:48,755 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:48,756 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 160}
+
+2023-05-29 13:39:49,258 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:49,258 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 161}
+
+2023-05-29 13:39:49,360 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:49,361 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 162}
+
+2023-05-29 13:39:49,861 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:49,862 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 163}
+
+2023-05-29 13:39:49,962 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:49,963 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 164}
+
+2023-05-29 13:39:50,464 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:50,465 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 165}
+
+2023-05-29 13:39:50,566 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:50,566 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 166}
+
+2023-05-29 13:39:51,067 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:51,067 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 167}
+
+2023-05-29 13:39:51,168 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:51,169 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 168}
+
+2023-05-29 13:39:51,670 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:51,670 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 169}
+
+2023-05-29 13:39:51,771 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:51,772 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 170}
+
+2023-05-29 13:39:52,273 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:52,273 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 171}
+
+2023-05-29 13:39:52,374 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:52,375 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 172}
+
+2023-05-29 13:39:52,876 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:52,877 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 173}
+
+2023-05-29 13:39:52,978 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:52,979 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 174}
+
+2023-05-29 13:39:53,480 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:53,481 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 175}
+
+2023-05-29 13:39:53,582 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:53,582 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 176}
+
+2023-05-29 13:39:54,084 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:54,085 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 177}
+
+2023-05-29 13:39:54,186 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:54,186 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 178}
+
+2023-05-29 13:39:54,688 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:54,688 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 179}
+
+2023-05-29 13:39:54,789 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:54,790 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 180}
+
+2023-05-29 13:39:55,292 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:55,292 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 181}
+
+2023-05-29 13:39:55,394 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:55,394 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 182}
+
+2023-05-29 13:39:55,895 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:55,896 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 183}
+
+2023-05-29 13:39:55,997 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:55,997 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 184}
+
+2023-05-29 13:39:56,499 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:56,499 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 185}
+
+2023-05-29 13:39:56,601 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:56,601 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 186}
+
+2023-05-29 13:39:57,102 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:57,102 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 187}
+
+2023-05-29 13:39:57,204 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:57,205 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 188}
+
+2023-05-29 13:39:57,705 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:57,707 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 189}
+
+2023-05-29 13:39:57,808 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:57,808 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 190}
+
+2023-05-29 13:39:58,310 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:58,310 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 191}
+
+2023-05-29 13:39:58,412 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:58,412 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 192}
+
+2023-05-29 13:39:58,914 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:58,914 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 193}
+
+2023-05-29 13:39:59,016 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:59,016 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 194}
+
+2023-05-29 13:39:59,518 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:39:59,518 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 195}
+
+2023-05-29 13:39:59,619 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:39:59,619 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 196}
+
+2023-05-29 13:40:00,121 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:40:00,121 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 197}
+
+2023-05-29 13:40:00,223 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:40:00,223 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 198}
+
+2023-05-29 13:40:00,724 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:40:00,724 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 199}
+
+2023-05-29 13:40:00,825 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:40:00,826 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 200}
+
+2023-05-29 13:40:01,327 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:40:01,328 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 201}
+
+2023-05-29 13:40:01,429 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:40:01,430 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 202}
+
+2023-05-29 13:40:01,931 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:40:01,932 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 203}
+
+2023-05-29 13:40:02,032 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:40:02,032 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 204}
+
+2023-05-29 13:40:02,534 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:40:02,534 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 205}
+
+2023-05-29 13:40:02,636 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:40:02,636 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 206}
+
+2023-05-29 13:40:03,137 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:40:03,138 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 207}
+
+2023-05-29 13:40:03,239 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:40:03,240 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 208}
+
+2023-05-29 13:40:03,741 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:40:03,741 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 209}
+
+2023-05-29 13:40:03,842 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:40:03,843 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 210}
+
+2023-05-29 13:40:04,344 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:40:04,345 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 211}
+
+2023-05-29 13:40:04,445 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:40:04,445 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 212}
+
+2023-05-29 13:40:04,947 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:40:04,947 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 213}
+
+2023-05-29 13:40:05,049 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:40:05,049 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 214}
+
+2023-05-29 13:40:05,551 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:40:05,551 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 215}
+
+2023-05-29 13:40:05,652 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:40:05,653 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 216}
+
+2023-05-29 13:40:06,154 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:40:06,154 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 217}
+
+2023-05-29 13:40:06,256 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:40:06,256 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 218}
+
+2023-05-29 13:40:06,758 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:40:06,758 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 219}
+
+2023-05-29 13:40:06,860 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:40:06,861 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 220}
+
+2023-05-29 13:40:07,362 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:40:07,363 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 221}
+
+2023-05-29 13:40:07,463 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:40:07,464 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 222}
+
+2023-05-29 13:40:07,965 - Debug Adapter (main) - DEBUG - Poll target restart
+2023-05-29 13:40:07,966 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target restart\n", "source": {}}, "seq": 223}
+
+2023-05-29 13:40:08,068 - Debug Adapter (main) - DEBUG - Poll target. Wait state 1
+2023-05-29 13:40:08,068 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Poll target. Wait state 1\n", "source": {}}, "seq": 224}
+
+2023-05-29 13:40:08,517 - Debug Adapter (ReaderThread) - DEBUG - read line: >>b'Content-Length: 105\\r\\n'<<
+
+2023-05-29 13:40:08,518 - Debug Adapter (ReaderThread) - DEBUG - read line: >>b'\\r\\n'<<
+
+2023-05-29 13:40:08,518 - Debug Adapter(Command Processor) - DEBUG - Got json: {
+    "arguments": {
+        "restart": false,
+        "terminateDebuggee": true
+    },
+    "command": "disconnect",
+    "seq": 13,
+    "type": "request"
+}
+2023-05-29 13:40:08,518 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Got json: {\n    \"arguments\": {\n        \"restart\": false,\n        \"terminateDebuggee\": true\n    },\n    \"command\": \"disconnect\",\n    \"seq\": 13,\n    \"type\": \"request\"\n}\n", "source": {}}, "seq": 225}
+
+2023-05-29 13:40:08,519 - Debug Adapter (main) - DEBUG - Adapter is Stopping...
+2023-05-29 13:40:08,519 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Debug Adapter stopped\n", "source": {}}, "seq": 226}
+
+2023-05-29 13:40:08,520 - Debug Adapter (main) - DEBUG - Stopping target poller
+2023-05-29 13:40:08,520 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Adapter is Stopping...\n", "source": {}}, "seq": 227}
+
+2023-05-29 13:40:08,520 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Stopping target poller\n", "source": {}}, "seq": 228}
+
+2023-05-29 13:40:08,570 - Debug Adapter (main) - DEBUG - Closing the GDB process
+2023-05-29 13:40:08,570 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Closing the GDB process\n", "source": {}}, "seq": 229}
+
+2023-05-29 13:40:08,571 - Gdb - DEBUG - MI->: -gdb-exit
+2023-05-29 13:40:08,572 - Gdb - DEBUG - MI<-:
+[{'message': 'exit',
+  'payload': None,
+  'stream': 'stdout',
+  'token': None,
+  'type': 'result'}]
+2023-05-29 13:40:08,573 - Gdb - DEBUG - RESULT: exit None
+2023-05-29 13:40:08,583 - Debug Adapter (main) - DEBUG - Closing the Socket
+2023-05-29 13:40:08,583 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Closing the Socket\n", "source": {}}, "seq": 230}
+
+2023-05-29 13:40:08,584 - Debug Adapter (main) - DEBUG - Stopping of the Writer thread
+2023-05-29 13:40:08,584 - Debug Adapter (WriterThread) - DEBUG - Writing: {"type": "event", "event": "output", "body": {"output": "Stopping of the Writer thread\n", "source": {}}, "seq": 231}
+
+2023-05-29 13:40:08,585 - Debug Adapter (main) - DEBUG - Stopping of the Reader thread
+2023-05-29 13:40:08,585 - Debug Adapter (main) - DEBUG - Adapter is Stopped
+2023-05-29 13:40:08,585 - Debug Adapter (main) - CRITICAL - Debug adapter -> Extension: DEBUG_ADAPTER_STOPPED
+2023-05-29 13:40:08,585 - Debug Adapter(Command Processor) - DEBUG - Processed command: disconnect
